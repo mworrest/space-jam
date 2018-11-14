@@ -1,16 +1,190 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
+</html>
+
 <head>
-<title>SPACE JAM HOME</title>
-    </head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Space Jam</title>
+    <script>document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + '; path=/';</script>
 
 
-    <body>
+    <style type="text/css">
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .header {
+            background: olivedrab;
+
+        }
+
         
-    <p>Space Jam Home</p>
-    <p>Claudia</p>
-    <p>Caleb</p>
-    <p>Sesi</p>
-    </body>
 
-    </html>
+        .nav {
+            display: flex;
+        }
+
+        .nav-ul {
+            background: yellowgreen;
+            flex-grow: 1;
+            list-style: none;
+        }
+
+        .logo {
+            background: rgb(205, 50, 184);
+            display: flex;
+        }
+
+
+
+
+        .content {
+            display: flex;
+        }
+
+        .left-sidebar {
+            background: steelblue;
+            flex-direction: column;
+            flex-grow: 1;
+
+        }
+
+        .main-content {
+            align-items: stretch;
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 4;
+            flex-direction: row;
+        }
+
+        .row1,
+        .row2,
+        .row3 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .rotating-carousel {
+            flex-grow:4;
+            background: peru;
+
+        }
+
+        .right-sidebar {
+            flex-grow:1;
+            background: thistle;
+            break-after: always;
+        }
+
+
+
+
+        .ad-card {
+            background: maroon;
+            flex-grow:1;
+        }
+
+        .new-items {
+            background: mediumblue;
+            flex-grow:1;
+
+        }
+
+        .latest-games {
+            background: mediumvioletred;
+            flex-grow:1;
+        }
+
+        .recent-winners {
+            background: limegreen;
+            width: 70%;
+        }
+
+
+
+        .container>div {
+            font-size: 1.5em;
+            padding: .5em;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .footer {
+            background: olivedrab;
+
+        }
+
+
+
+        @media screen and (max-width: 330px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 660px) {
+            .row1,
+            .row2,
+            .row3 {
+                flex-direction: column;
+            }
+            .row1>div,
+            .row2>div,
+            .row3>div {
+                width: 100%;
+            }
+        }
+
+
+        @media screen and (max-width: 990px) {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+          
+
+            <div class="nav">
+                <div class="logo"><img src="/space jam/space-jam-logo.jpg"></div>
+                <div class="nav-ul">Navigation</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left-sidebar">Left Sidebar</div>
+
+            <div class="main-content">
+                <div class="row1">
+                    <div class="rotating-carousel">Rotating Carousel</div>
+
+                    <div class="right-sidebar">Right Sidebar</div>
+                </div>
+                <div class="row2">
+                    <div class="ad-card">Ad Card</div>
+
+                    <div class="new-items">New Items</div>
+
+                    <div class="latest-games">Latest Games</div>
+                </div>
+
+                <div class="row3">
+                    <div class="recent-winners">Recent Winners</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+
+
+</body>
+
+
+</html>
