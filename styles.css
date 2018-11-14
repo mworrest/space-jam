@@ -1,0 +1,134 @@
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .header {
+            background: olivedrab;
+
+        }
+
+        
+
+        .nav {
+            display: flex;
+        }
+
+        .nav-ul {
+            background: yellowgreen;
+            flex-grow: 1;
+            list-style: none;
+        }
+
+        .logo {
+            background: rgb(205, 50, 184);
+            display: flex;
+        }
+
+
+
+
+        .content {
+            display: flex;
+        }
+
+        .left-sidebar {
+            background: steelblue;
+            flex-direction: column;
+            flex-grow: 1;
+
+        }
+
+        .main-content {
+            align-items: stretch;
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 4;
+            flex-direction: row;
+        }
+
+        .row1,
+        .row2,
+        .row3 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .hero {
+            flex-grow:4;
+            background: peru;
+
+        }
+
+        .right-sidebar {
+            flex-grow:1;
+            background: thistle;
+            break-after: always;
+        }
+
+
+
+
+        .ad-card {
+            background: maroon;
+            flex-grow:1;
+        }
+
+        .new-items {
+            background: mediumblue;
+            flex-grow:1;
+
+        }
+
+        .latest-games {
+            background: mediumvioletred;
+            flex-grow:1;
+        }
+
+        .recent-winners {
+            background: limegreen;
+            width: 70%;
+        }
+
+
+
+        .container>div {
+            font-size: 1.5em;
+            padding: .5em;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .footer {
+            background: olivedrab;
+
+        }
+
+
+
+        @media screen and (max-width: 330px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 660px) {
+            .row1,
+            .row2,
+            .row3 {
+                flex-direction: column;
+            }
+            .row1>div,
+            .row2>div,
+            .row3>div {
+                width: 100%;
+            }
+        }
+
+
+        @media screen and (max-width: 990px) {}
+    
