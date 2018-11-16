@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* -------------- Basic grid specs -------------- */
+
+.container {grid-column: 1/4;}
+
+@media screen and (min-width: 1200px) { 
+    body {grid-template-columns: 1fr minmax(1200px, 1fr) 1fr;}
+}
+
+.content {
+    grid-column: 2/3;
+    background-color: ;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.content.nav {grid-template-columns: auto 1fr;}
+.content.footer { }
+
+/* -------------- Layout options -------------- */
+
+@media screen and (min-width: 660px) {
+    .content.three-column {grid-template-columns: repeat(3,1fr);}
+    .content.four-column {grid-template-columns: repeat(4,1fr);}
+    .content.two-column {grid-template-columns: repeat(2,1fr);}
+    
+    .span-all {grid-column: 1/-1;}
+    .span-two {grid-column: span 2;}
+    
+    .film {grid-column: 3/4; grid-row: 1/3;}
+}
+
+/* -------------- Row background colors/graphics -------------- */
+
+.header, .light-gray {background: lightgray;}
+.hero {background: orange;}
+.banner, .gray, .footer {background: gray;}
+
+/* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
+
+.content>div {
+    border: 1px black solid;
+    padding: .5em;
+}
+.hero>div {
+    height: 50vh;
+}
+.banner>div {
+    height: 100px;
+    color: white;
+}
