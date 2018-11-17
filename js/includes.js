@@ -2,9 +2,12 @@ $(document).ready(function () {
     $('#navbar').load('includes/navbar.html');
     $('#sidebar_issues').load('includes/sidebar_issues.html');
     $('#footer').load('includes/footer.html');
-
-    $('#btn_issues').click(function() {
-        console.log('hi');
+    
+    $('#jordan-trigger').click(function(){
+        $('#test-content').load( 'includes/characters/jordan.html' );
+    });
+    $('#bugs-trigger').click(function(){
+        $('#test-content').load( 'includes/characters/bugs.html' );
     });
 
 });
