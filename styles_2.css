@@ -7,6 +7,12 @@ body {
     grid-template-columns: 1fr;
 }
 
+/* -------------- Basic element styles -------------- */
+
+.fluid-image {
+    width 100%
+}
+
 /* -------------- Basic grid specs -------------- */
 
 .container {grid-column: 1/4;}
