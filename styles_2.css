@@ -27,6 +27,19 @@ body {
 .content.nav {grid-template-columns: auto 1fr;}
 .content.footer { }
 
+/* -------------- Text Styles -------------- */
+
+/* --------- Bios --------- */
+.bio_body{
+    font-size: .5em;
+    line-height:1.4;
+    background-color: yellow;
+}
+.bio_body h2{
+    font-size: 2em;
+}
+
+
 /* -------------- Layout options -------------- */
 
 @media screen and (min-width: 660px) {
