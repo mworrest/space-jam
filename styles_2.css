@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr;
@@ -9,8 +9,8 @@ body {
 
 /* -------------- Basic element styles -------------- */
 
-.fluid-image {
-    width 100%
+img {
+    width: 100%;
 }
 
 /* -------------- Basic grid specs -------------- */
@@ -34,24 +34,21 @@ body {
 .content.footer { }
 
 /* -------------- Text Styles -------------- */
-
-/* --------- Bios --------- */
-.bio_body{
-    font-size: .5em;
-    line-height:1.4;
-    background-color: yellow;
-}
-.bio_body h2{
-    font-size: 2em;
-}
-
-
 /* -------------- Layout options -------------- */
 
 @media screen and (min-width: 660px) {
     .content.three-column {grid-template-columns: repeat(3,1fr);}
     .content.four-column {grid-template-columns: repeat(4,1fr);}
     .content.two-column {grid-template-columns: repeat(2,1fr);}
+    
+    .section-preview.split {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media screen and (min-width:660px) {
+        .section-preview.split a:first-of-type {margin-right: .5em; margin-bottom: 0;}
+        .section-preview.split a:last-of-type {margin-left: .5em;}
+    }
     
     .span-all {grid-column: 1/-1;}
     .span-two {grid-column: span 2;}
@@ -62,7 +59,13 @@ body {
 /* -------------- Row background colors/graphics -------------- */
 
 .header, .light-gray {background: lightgray;}
-.hero {background: orange;}
+.hero {
+    background-image: url(assets/space.jpg);
+    background-color: rgba(74, 20, 140, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
 .banner, .gray, .footer {background: gray;}
 
 /* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
@@ -78,6 +81,27 @@ body {
     height: 100px;
     color: white;
 }
+
+/* -------------- Block Links -------------- */
+
+.section-preview a {text-decoration: none;}
+.section-link {color: white;}
+
+.section-link {
+    background-size: cover;
+    background-position: center;
+    height: 100%; 
+    text-align: center;
+    padding:2em
+}
+
+.section-link.about {background-image: url(assets/space-jam.jpg)}
+.section-link.bball {background-image: url(assets/space-jam.jpg)}
+.section-link.trivia {background-image: url(assets/space-jam.jpg)}
+.section-link.match {background-image: url(assets/space-jam.jpg)}
+
+.section-link img {width:100px;}
+
 
 /* -------------- Nav bar -------------- */
 
