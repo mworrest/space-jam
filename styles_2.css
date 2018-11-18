@@ -7,6 +7,22 @@ body {
     grid-template-columns: 1fr;
 }
 
+h1 {
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+}
+
+.hero-header {
+    font-size: 4em;
+    font-family: 'Oswald', Arial, sans-serif;
+    color: white;
+}
+.hero-description {
+    font-size: 2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    color: white;
+}
+
 /* -------------- Basic element styles -------------- */
 
 img {
