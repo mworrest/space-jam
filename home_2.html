@@ -8,7 +8,9 @@
     <script>document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + '; path=/';</script>
     <link href="styles_2.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="slick-theme.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -46,9 +48,21 @@
                     </a>     
                 </div>
             </div>
+
+
             <div class="span-all">
                 
                 Character Carousel
+
+                <div class="multiple-items" style="background-color:blueviolet">
+                        <div><img src="assets/icons/icon.png">1 your content</div>
+                        <div>2 your content</div>
+                        <div>3 your content</div>
+                        <div>4 your content</div>
+                        <div>5 your content</div>
+                        <div>6 your content</div>
+                        <div>7 your content</div>
+                      </div>
                 
             </div>
         </div>
@@ -106,8 +120,23 @@
     <!--SCRIPTS-->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/includes.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.your-class').slick({
+          
+        });
+      });
+      </script>
 
-
+      <script>
+      $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1
+          });
+          </script>
 
 </body>
 

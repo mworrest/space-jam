@@ -160,7 +160,7 @@ header {
 }
 
 .logo {
-    width: 50%;
+    width: 30%;
   }
 
 /* changed this from the tutorial video to
@@ -309,5 +309,19 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1,1);
   }
+}
+
+
+/* -------------- Carousel Styles -------------- */
+
+.slick-slide {
+    color: white;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.slick-slide img {
+    display: block;
+    margin-bottom: 20px;
 }
 
