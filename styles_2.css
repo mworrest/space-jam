@@ -156,7 +156,12 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  font-family: 'Oswald', Arial, sans-serif;
 }
+
+.logo {
+    width: 50%;
+  }
 
 /* changed this from the tutorial video to
    allow it to gain focus, making it tabbable */
@@ -173,8 +178,8 @@ header {
 .nav-toggle-label {
   position: absolute;
   top: 0;
-  left: 0;
-  margin-left: 1em;
+  right: 0;
+  margin-right: 1em;
   height: 100%;
   display: flex;
   align-items: center;
@@ -207,9 +212,9 @@ header {
 
 nav {
   position: absolute;
-  text-align: left;
+  text-align: center;
   top: 100%;
-  left: 0;
+  right: 0;
   background: var(--background);
   width: 100%;
   transform: scale(1, 0);
@@ -250,7 +255,9 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 800px) {
+
+
+@media screen and (min-width: 660px) {
   .nav-toggle-label {
     display: none;
   }
