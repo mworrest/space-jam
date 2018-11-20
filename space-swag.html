@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Space Jam</title>
+ <script>document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + '; path=/';</script>
+    <link href="styles_2.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="slick-theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="container header">
+            <div id="navbar" class="content nav"></div>
+    </div>
+
+    <div class="container banner">  
+        <div class="content">
+                <div class="">Trivia Quiz</div>
+        </div>
+    </div>        
+
+    <div class="container">   
+        <div class="content">
+            <p class="span-all">Sound Clips</p>
+            <br />
+            <p class="span-all">While they may not have quite the same punch as Dolby SurroundSound, these sound clips will provide you with minutes of fun!</p>
+        </div>
+    </div>  
+        
+    <!--Sound Clips Carousel-->
+        
+       <div class="span-all">
+            <div class="multiple-items" style="background-color:grey">
+                <!--Thumbnail #1-->
+                <div>
+                    <a href="#">
+                        <div class="carousel-thumbnail">
+                            <img src="assets/jordan-thumbnail.gif">
+                        </div>
+                    </a>
+                    <p>You guys are nuts.</p>
+                    <button class="download" type="button">Download</button>
+                </div>
+                <!--Thumbnail #2-->
+                <div>
+                    <a href="#">
+                        <div class="carousel-thumbnail">
+                            <img src="assets/bugs-thumbnail.gif">
+                        </div>
+                    </a>
+                    <p>What do we care?</p>
+                    <button class="download" type="button">Download</button>                
+                </div>
+                <!--Thumbnail #3-->    
+                <div>
+                    <a href="#">
+                        <div class="carousel-thumbnail">
+                            <img src="assets/monstars-thumbnail.gif">
+                        </div>
+                    </a>
+                    <p>Monstar growl</p>
+                    <button class="download" type="button">Download</button>
+                </div>    
+                <!--Thumbnail #4-->
+                <div>
+                    <a href="#">
+                        <div class="carousel-thumbnail">
+                            <img src="assets/nerdluck-thumbnail.gif">
+                        </div>
+                    </a>
+                    <p>We are taking you to our theme park in outer space...</p>
+                    <button class="download" type="button">Download</button>    
+                </div>
+                <!--Thumbnail #5-->
+                <div>
+                    <a href="#">
+                        <div class="carousel-thumbnail">
+                            <img src="assets/bugs2-thumbnail.gif">
+                        </div>
+                    </a>
+                    <p>You were expecting maybe the Easter Bunny?</p>
+                    <button class="download" type="button">Download</button> bugs
+                </div>
+            </div>
+        </div>
+    
+                 
+    <!--FOOTER-->
+    <div class="container footer"> 
+        <div id="footer" class="content"></div>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/includes.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/carousel.js"></script>
+ <script>
+    $(document).ready(function(){
+      
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+    });
+</script>
+
+</body>
+
+
+</html>
