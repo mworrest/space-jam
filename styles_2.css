@@ -49,6 +49,8 @@ img {
     grid-template-columns: 1fr;
 }
 
+
+
 .content.nav {grid-template-columns: auto 1fr;}
 .content.footer { }
 
@@ -161,8 +163,7 @@ img {
 header {
   background: var(--background);
   text-align: center;
-  position: fixed;
-  z-index: 999;
+  position: absolute;
   width: 100%;
   font-family: 'Oswald', Arial, sans-serif;
 }
@@ -276,7 +277,7 @@ nav a:hover {
   }
   
   .logo {
-    grid-column: 2 / 3;
+    width: 50%;
   }
   
   nav {
@@ -323,9 +324,13 @@ nav a:hover {
 /* -------------- Carousel Styles -------------- */
 
 .slick-slide {
-    color: white;
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+.slick-slide a {
+    color: white;
+    text-decoration: none;
 }
 
 .slick-slide img {
