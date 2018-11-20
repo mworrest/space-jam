@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-size: 1em;
+    line-height:1.4;
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr;
@@ -52,6 +53,11 @@ img {
 .content.footer { }
 
 /* -------------- Text Styles -------------- */
+
+/* ---character include p--- */
+#test-content p{
+    line-height:1.6;
+}
 /* -------------- Layout options -------------- */
 
 @media screen and (min-width: 660px) {
@@ -87,12 +93,13 @@ img {
     background-size: cover;
     background-position: center;
 }
-.banner, .gray, .footer {background: gray;}
+.banner, .gray, .footer {background: gray;
+}
 
 /* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
 
 .content>div {
-    border: 1px black solid;
+    border: 1px grey solid;
     padding: .5em;
 }
 .hero>div {
