@@ -5,7 +5,11 @@
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Space Jam</title>
-    <script>document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + '; path=/';</script>
+ <script>document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + '; path=/';</script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="slick-theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="styles_2.css" rel="stylesheet">
 </head>
 
@@ -17,19 +21,43 @@
     
     <div class="container banner">
         <div class="content">
-            <div class="">NBA Players</div>
+            <div class="">Looney Toons</div>
         </div>
     </div>    
     
+    
+
     <div class="container">    
-        <div class="content two-column">
-            <div class="span-all">Character Carousel</div>
-            <div class="">Sexy Image</div>
-            <div class="">Player Name</div>
-            <div class="">Cast Bio Content</div>
-            <div class="">Stats</div>
+     <!-- carousel nav -->
+       <div class="span-all">
+
+        <div class="multiple-items content" style="background-color:lightgrey">
+            <div id="jordan-trigger"> 
+                <img class="headshot" src="assets/icons/icon.png">
+                <p>Michael Jordan</p>
+            </div>
+            <div id="ewing-trigger"> 
+                <img class="headshot" src="assets/icons/icon.png">
+                <p>Patric Ewing</p>
+            </div>
+            <div id="barkley-trigger">
+                <img class="headshot" src="assets/icons/icon.png">
+                <p>Charles Barkley</p>
+            </div>
+            
         </div>
+     
+
+        <div id="test-content" class="content three-column bio_body">
+        </div><!-- body content -->
+      
     </div> 
+    
+    
+    
+    
+    
+    
     
     <!--FOOTER-->
     <div class="container footer"> 
@@ -38,7 +66,25 @@
 
     <!--SCRIPTS-->
     <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/includes.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/carousel.js"></script>
+ <script>
+    $(document).ready(function(){
+        $('.your-class').slick({
+          
+        });
+      });
+      </script>
+
+      <script>
+      $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1
+          });
+          </script>
 
 </body>
 
