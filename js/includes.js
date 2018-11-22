@@ -11,6 +11,20 @@ $(document).ready(function () {
     $('#ewing-trigger').click(function (){
         $('#test-content').load('includes/characters/ewing.html');
     });
+    $('#barkley-trigger').click(function (){
+        $('#test-content').load('includes/characters/barkley.html');
+    });
+    $('#johnson-trigger').click(function (){
+        $('#test-content').load('includes/characters/johnson.html');
+    });
+    $('#bogues-trigger').click(function (){
+        $('#test-content').load('includes/characters/bogues.html');
+    });
+    $('#bradley-trigger').click(function (){
+        $('#test-content').load('includes/characters/bradley.html');
+    });
+    
+    
     $('#bugs-trigger').click(function (){
         $('#test-content').load('includes/characters/bugs.html');
     });
