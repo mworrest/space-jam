@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#navbar').load('includes/navbar.html');
     $('#footer').load('includes/footer.html');
-    $('#looney').load('includes/characters/bugs.html');
+    $('#test-content').load('includes/characters/bugs.html');
     
     
     

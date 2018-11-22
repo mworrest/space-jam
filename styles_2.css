@@ -349,18 +349,45 @@ nav a:hover, nav a:focus {
 
 /* -------------- Carousel Styles -------------- */
 
-.slick-slide {
-    text-align: center;
+.headshot {
+    width:60px;
+    padding-bottom: 15px;
 }
 
+.slick-slide {
+    padding: 20px 0;
+    text-align: center;
+}
+.slick-slide p {margin: 0;}
 .slick-slide a {
     color: white;
     text-decoration: none;
 }
 
 .slick-slide img {
-    display: block;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    display: unset;
+    transition: all .2s ease-in-out; 
+}
+
+.slick-slide:hover p, .slick-slide:focus p {
+    color: red;
+}
+.slick-slide:hover img, .slick-slide:focus img {
+    transform: scale(1.1);
+}
+
+.slick-next, .slick-prev {
+    z-index: 2;
+    right: 32px;
+}
+.slick-prev {
+    z-index: 2;
+    left: 15px;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 38px;
+    color: white;
 }
 
 /* Display carousel as grid in desktop view and hide grid in mobile view*/
