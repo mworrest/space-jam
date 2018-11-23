@@ -66,6 +66,7 @@ img {
     .content.three-column {grid-template-columns: repeat(3,1fr);}
     .content.four-column {grid-template-columns: repeat(4,1fr);}
     .content.two-column {grid-template-columns: repeat(2,1fr);}
+    .content.five-column {grid-template-columns: repeat(5,1fr);}
     
     .section-preview.split {
         display: grid;
@@ -83,7 +84,11 @@ img {
     
 }
 
+/* -------------- Mobile Grid -------------- */
 
+@media screen and (max-width: 660px) {
+    .content.mobile-two-column {grid-template-columns: repeat(2,1fr);}
+}
 
 /* -------------- Row background colors/graphics -------------- */
 
@@ -336,42 +341,4 @@ nav a:hover {
 .slick-slide img {
     display: block;
     margin-bottom: 20px;
-}
-
-/* Display carousel as grid in desktop view and hide grid in mobile view*/
-
-@media screen and (max-width:660px) {
-    .five-column-grid {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 660px) {
-    
-    .five-column-grid {
-        display: grid;
-        grid-column-gap: 0.75em;
-        grid-template-columns: repeat(5,1fr);
-    }    
-
-    .sound-clip-1 {
-        grid-column: 1 / 2;
-    }
-    
-    .sound-clip-2 {
-        grid-column: 2 / 3;
-    }
-    
-    .sound-clip-3 {
-        grid-column: 3 / 4;
-    }
-    
-    .sound-clip-4 {
-        grid-column: 4 / 5;
-    }
-    
-    .sound-clip-5 {
-        grid-column: 5 / 6;
-    }
-
 }
