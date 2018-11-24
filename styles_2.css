@@ -74,7 +74,7 @@ header.content {
 @media screen and (min-width: 660px) {
     .content.three-column {grid-template-columns: repeat(3,1fr);}
     .content.four-column {grid-template-columns: repeat(4,1fr);}
-    .content.two-column {grid-template-columns: repeat(2,1fr);}
+    . {grid-template-columns: repeat(2,1fr);}
     .content.five-column {grid-template-columns: repeat(5,1fr);}
     
     .section-preview.split {
