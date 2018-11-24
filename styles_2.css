@@ -119,7 +119,7 @@ p{}
     background-position: center;
 }
 .banner, .gray, .footer {background: gray;
-}
+}x
 
 /* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
 
@@ -363,7 +363,9 @@ nav a:hover, nav a:focus {
 .headshot {
     width:60px;
     padding-bottom: 15px;
+       border-radius:50%;
 }
+
 
 .slick-slide {
     padding: 20px 0;
