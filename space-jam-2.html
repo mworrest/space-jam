@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Space Jam</title>
+    <script>document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + '; path=/';</script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="slick-theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="styles_2.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <div class="container header">
+        <header id="navbar" class="content nav"></header>
+    </div>
+    
+    <div class="container banner">
+        <div class="content flex">
+            <h1>Space Jam 2</h1>
+        </div>
+    </div>   
+    
+    <!--FOOTER-->
+    <div class="container footer"> 
+        <div id="footer" class="content"></div>
+    </div>
+
+    <!--SCRIPTS-->
+<!--SCRIPTS-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/includes.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.your-class').slick({
+
+            });
+          });
+          </script>
+
+          <script>
+          $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1
+              });
+    </script>
+
+</body>
+
+
+</html>
