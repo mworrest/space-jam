@@ -20,18 +20,6 @@ h1 {
     font-family: Arial, sans-serif;
 }
 
-.hero-header {
-    font-size: 4em;
-    line-height: 1em;
-    color: white;
-    margin-top:50px;
-    margin-bottom:-50px;
-}
-.hero-description {
-    font-size: 2em;
-    color: white;
-}
-
 img {
     width: 100%;
 }
@@ -52,6 +40,11 @@ div.content {
     grid-template-columns: 1fr;
 }
 
+div.content.flex {
+    display: flex;
+    flex-direction: column;
+}
+
 header.content { 
     position: sticky;
     grid-column: 2/3;
@@ -64,6 +57,17 @@ header.content {
 .content.footer { }
 
 /* -------------- Text Styles -------------- */
+
+h1, h2, h3, h4, h5 {}
+
+p{}
+
+.hero {
+    color:white;
+    text-align: center;
+}
+
+
 
 /* ---character include p--- */
 #test-content p{
@@ -120,11 +124,13 @@ header.content {
 /* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
 
 .content>div {
-    border: 1px grey solid;
+    border: 1px rgba(128, 128, 128, 0.25) solid;
     padding: .5em;
 }
-.hero>div {
-    height: 50vh;
+.hero .content {
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
 }
 .banner>div {
     height: 100px;
