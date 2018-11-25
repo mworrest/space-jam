@@ -8,6 +8,7 @@
     <script>document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + '; path=/';</script>
     <link href="styles_2.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 </head>
 
 <body>
@@ -33,20 +34,25 @@
                 <p class="question">QUESTION 1: What rival calls Bugs a "long-eared galoot?"</p>
                 <div class="content two-column">
                     <div>
-                        <p>Wilie E. Coyote</p>
-                        <br />
-                        <p>Elmer Fudd</p>
-                        <br />
-                        <p>Yosemite Sam</p>
-                        <br />
-                        <p>Witch Hazel</p>                
+                        <fieldset data-role="controlgroup">
+                            <input type="radio" name="1a" id="1a" value="Wilie E. Coyote">
+                            <label for="1a">Wilie E. Coyote</label>
+                            <input type="radio" name="1b" id="1b" value="Elmer Fudd">
+                            <label for="1b">Elmer Fudd</label>
+                            <input type="radio" name="1c" id="1c" value="Yosemite Sam">
+                            <label for="1c">Yosemite Sam</label>
+                            <input type="radio" name="1d" id="1d" value="Witch Hazel">
+                            <label for="1d">Witch Hazel</label>
+                        </fieldset>
                     </div>
-                    <div>
-                    </div>
+                    <div id="quiz-feedback"></div>
+                    <div id="next-question"></div>
                 </div>
             </div>
-        </div>     
-</body>
+        </div>
+</div>    
+
+    </body>
 
     <!--FOOTER-->
     <div class="container footer"> 
@@ -56,5 +62,78 @@
     <!--SCRIPTS-->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/includes.js"></script>
+    <!--jQuery Mobile-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!--Incorrect answer, show 'try again' message-->
+    <script>
+        $("#1a, #1b, #1d, #2b, #2c, #2d, #3a, #3b, #3d, #4b, #4c, #4d, #5a, #5c, #5d, #6a, #6c, #6d").on( "click", function() {
+          $("#quiz-feedback").html("Sorry, that's not correct. Please try again.");
+          });
+    </script>
+    
+    <!--Correct answer, show next question button and load QUESTION 2 when button is clicked-->
+    <script>
+        $("#1c").on( "click", function () {
+            $("#quiz-feedback").html("That's correct!");
+            $("#next-question").load("includes/trivia-quiz/next-question-button.html");
+            $("#next-question").on( "click", function () {
+            $(".quiz-question").load("includes/trivia-quiz/question-2.html");
+        })
+          });
+    </script>
 
+    <!--Correct answer, show next question button and load QUESTION 3 when button is clicked-->
+    <script>
+        $("#2a").on( "click", function () {
+            $("#quiz-feedback").html("That's correct!");
+            $("#next-question").load("includes/trivia-quiz/next-question-button.html");
+            $("#next-question").on( "click", function () {
+            $(".quiz-question").load("includes/trivia-quiz/question-3.html");
+        })
+          });
+    </script>
+    
+    <!--Correct answer, show next question button and load QUESTION 4 when button is clicked-->
+    <script>
+        $("#3c").on( "click", function () {
+            $("#quiz-feedback").html("That's correct!");
+            $("#next-question").load("includes/trivia-quiz/next-question-button.html");
+            $("#next-question").on( "click", function () {
+            $(".quiz-question").load("includes/trivia-quiz/question-4.html");
+        })
+          });
+    </script>
+
+    <!--Correct answer, show next question button and load QUESTION 5 when button is clicked-->
+    <script>
+        $("#4a").on( "click", function () {
+            $("#quiz-feedback").html("That's correct!");
+            $("#next-question").load("includes/trivia-quiz/next-question-button.html");
+            $("#next-question").on( "click", function () {
+            $(".quiz-question").load("includes/trivia-quiz/question-5.html");
+        })
+          });
+    </script>
+    
+    <!--Correct answer, show next question button and load QUESTION 6 when button is clicked-->
+    <script>
+        $("#5b").on( "click", function () {
+            $("#quiz-feedback").html("That's correct!");
+            $("#next-question").load("includes/trivia-quiz/next-question-button.html");
+            $("#next-question").on( "click", function () {
+            $(".quiz-question").load("includes/trivia-quiz/question-6.html");
+        })
+          });
+    </script>
+    
+    <!--Correct answer, end quiz-->
+    <script>
+        $("#6b").on( "click", function () {
+            $("#quiz-feedback").html("That's correct! Congrats on finishing the quiz, you're officially a Looney Tunes wiz!");
+            });
+    </script>
+
+    
 </html>
