@@ -1,7 +1,9 @@
 /* -------------- Variables -------------- */
 
 :root {
-  --background: rgb(11, 191, 170);
+    --background: rgb(11, 191, 170);
+    --transition: all .15s ease-in-out;
+    --transform: scale(1.05);
 }
 
 /* -------------- Basic element styles -------------- */
@@ -20,20 +22,14 @@ h1 {
     font-family: Arial, sans-serif;
 }
 
-.hero-header {
-    font-size: 4em;
-    line-height: 1em;
-    color: white;
-    margin-top:50px;
-    margin-bottom:-50px;
-}
-.hero-description {
-    font-size: 2em;
-    color: white;
-}
+a {text-decoration: none;}
 
 img {
     width: 100%;
+}
+
+.slick-slide img, .feature-block > div {
+    transition: var(--transition); 
 }
 
 /* -------------- Basic grid specs -------------- */
@@ -63,7 +59,21 @@ header.content {
 
 .content.footer { }
 
+div.content.flex {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 660px) { 
+    div.content.flex {
+        padding-left: 15px;
+    }
+}
 /* -------------- Text Styles -------------- */
+
+h1, h2, h3, h4, h5 { font-weight: 200}
+
+p{}
+
 
 /* ---character include p--- */
 #test-content p{
@@ -72,12 +82,13 @@ header.content {
 /* -------------- Layout options -------------- */
 
 @media screen and (min-width: 660px) {
+    .content.two-column {grid-template-columns: repeat(2,1fr);}
     .content.three-column {grid-template-columns: repeat(3,1fr);}
     .content.four-column {grid-template-columns: repeat(4,1fr);}
-    .content.two-column {grid-template-columns: repeat(2,1fr);}
+    . {grid-template-columns: repeat(2,1fr);}
     .content.five-column {grid-template-columns: repeat(5,1fr);}
     
-    .section-preview.split {
+    .section-preview.split, .split {
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
@@ -107,6 +118,18 @@ header.content {
 }
 
 .light-gray {background: lightgray;}
+
+.banner, .gray, .footer {background: gray;
+}
+
+/* -------------- Home hero banner -------------- */
+
+.hero .content {
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero {
     background-image: url(assets/space.jpg);
     background-color: rgba(74, 20, 140, 0.5);
@@ -114,18 +137,48 @@ header.content {
     background-size: cover;
     background-position: center;
 }
-.banner, .gray, .footer {background: gray;
+
+.hero {
+    color:white;
+    text-align: center;
 }
 
+.hero h1 { font-size: 2.5em; }
+.hero h2 { font-size: 1.2em; }
+
+@media screen and (min-width: 660px) { 
+
+    .hero h1 { font-size: 3.5em; }
+    .hero h2 { font-size: 1.5em; }
+    .hero .content { 
+        height: 60vh; 
+        text-align: left;
+        align-items: baseline;
+        justify-content: flex-end;
+    }
+    
+}
+
+/* -------------- Page banners -------------- */
+
+.banner .content.flex {
+    flex-direction: row;
+    align-items: flex-end;
+}
+@media screen and (max-width: 660px) {
+.banner .content.flex {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+}
 /* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
 
 .content>div {
-    border: 1px grey solid;
+    border: 1px rgba(128, 128, 128, 0.25) solid;
     padding: .5em;
 }
-.hero>div {
-    height: 50vh;
-}
+
 .banner>div {
     height: 100px;
     color: white;
@@ -151,6 +204,34 @@ header.content {
 
 .section-link img {width:100px;}
 
+
+.feature-block { 
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #b4b4b4; 
+    color: white;
+    margin: 10px;
+    padding-bottom: 1em;
+}
+
+.feature-block:hover > div { transform: var(--transform);; }
+
+.feature-block h2 {margin:0;}
+.feature-block img {width:6em; margin-top: 1em}
+
+.category {
+    display: flex;
+    border-top: solid black 1px;
+} 
+
+.category img {
+    flex: 0;
+    margin-right: 1em;
+    width: 40px; height: 40px;
+}
 
 /* -------------- Nav bar -------------- */
 
@@ -357,7 +438,9 @@ nav a:hover, nav a:focus {
 .headshot {
     width:60px;
     padding-bottom: 15px;
+       border-radius:50%;
 }
+
 
 .slick-slide {
     padding: 20px 0;
@@ -372,14 +455,13 @@ nav a:hover, nav a:focus {
 .slick-slide img {
     margin-bottom: 0px;
     display: unset;
-    transition: all .2s ease-in-out; 
 }
 
 .slick-slide:hover p, .slick-slide:focus p {
     color: red;
 }
 .slick-slide:hover img, .slick-slide:focus img {
-    transform: scale(1.1);
+    transform:  var(--transform);
 }
 
 .slick-next, .slick-prev {
@@ -392,7 +474,7 @@ nav a:hover, nav a:focus {
 }
 .slick-prev:before, .slick-next:before {
     font-size: 38px;
-    color: white;
+    color: gray;
 }
 <<<<<<< HEAD
 =======
