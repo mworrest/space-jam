@@ -534,7 +534,5 @@ td, th {
     padding: 8px;
 }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
+
 >>>>>>> 384b04e7987691326d5d8b2a6f586c5b39083b94
