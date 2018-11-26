@@ -547,4 +547,20 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+/*---- Store styles---- */
+
+.artist-feature {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.album-thumbnail {
+    margin: 1em;
+}
+
+.album-thumbnail {
+
+}
+
 >>>>>>> 384b04e7987691326d5d8b2a6f586c5b39083b94
