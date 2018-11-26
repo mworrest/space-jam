@@ -189,6 +189,16 @@ p{}
     color: white;
 }
 
+/* -------------- Accordian -------------- */
+
+.ui-state-default {
+    
+}
+
+/* -------------- Video Embed -------------- */
+
+
+
 /* -------------- Block Links -------------- */
 
 .section-preview a {text-decoration: none;}
