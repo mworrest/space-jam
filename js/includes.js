@@ -1,3 +1,17 @@
+// Navigation JS
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+        x.className += " dropdown-border";
+        x.className += " show";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+
 $(document).ready(function () {
     $('#navbar').load('includes/navbar.html');
     $('#footer').load('includes/footer.html');
