@@ -449,6 +449,15 @@ p{}
     color: #fff;
 }
 
+.footer ul{
+        display:flex;
+        justify-content: space-around;
+}
+.footer li{
+    flex: 1 1 1 0;
+}
+  
+
 /* -------------- Carousel Styles -------------- */
 
 .headshot {
@@ -528,14 +537,7 @@ p{}
     .sound-clip-5 {
         grid-column: 5 / 6;
     }
-    .footer ul{
-        display:flex;
-        justify-content: space-around;
-    }
-    .footer li{
-        flex: 1 1 1 0;
-    }
-  
+    
     
 }
 /*---table styles---*/
