@@ -8,7 +8,7 @@
     <script>document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + '; path=/';</script>
     <link href="styles_2.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-<!--    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 </head>
 
 <body>
@@ -34,26 +34,16 @@
                 <p class="question">QUESTION 1: What rival calls Bugs a "long-eared galoot?"</p>
                 <div class="content two-column">
                     <div>
-                        <div> 
+                        <fieldset data-role="controlgroup">
                             <input type="radio" name="1a" id="1a" value="Wilie E. Coyote">
                             <label for="1a">Wilie E. Coyote</label>
-                        </div>
-                        <br />
-                        <div>
                             <input type="radio" name="1b" id="1b" value="Elmer Fudd">
                             <label for="1b">Elmer Fudd</label>
-                        </div>
-                        <br />
-                        <div>
                             <input type="radio" name="1c" id="1c" value="Yosemite Sam">
                             <label for="1c">Yosemite Sam</label>
-                        </div>
-                        <br />
-                        <div>
                             <input type="radio" name="1d" id="1d" value="Witch Hazel">
                             <label for="1d">Witch Hazel</label>
-                        </div>
-                        <br />
+                        </fieldset>
                     </div>
                     <div id="quiz-feedback"></div>
                     <div id="next-question"></div>
@@ -73,7 +63,7 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/includes.js"></script>
     <!--jQuery Mobile-->
-<!--    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <!--    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
     
     <!--Incorrect answer, show 'try again' message-->
