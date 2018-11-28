@@ -628,14 +628,36 @@ tr:nth-child(even) {
     }
 }
 
+.space-swag {
+    padding-right: 0.5em; 
+}
 
 /* ---- Game styles ---- */
 
 #nerdluck-match {
     grid-column: 3 / 4;
+    
 }
 
+/* ---- Star page ---- */
 
+#quote {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#citation {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#star-container {
+    justify-content: space-evenly;
+}
 >>>>>>> 4e319e26a83a624e41453e21f61cd72e4ffbc3f3
 
 >>>>>>> 384b04e7987691326d5d8b2a6f586c5b39083b94
