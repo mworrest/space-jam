@@ -629,7 +629,11 @@ tr:nth-child(even) {
 }
 
 
+/* ---- Game styles ---- */
 
+#nerdluck-match {
+    grid-column: 3 / 4;
+}
 
 
 >>>>>>> 4e319e26a83a624e41453e21f61cd72e4ffbc3f3
