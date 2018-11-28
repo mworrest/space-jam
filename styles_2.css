@@ -235,17 +235,12 @@ p{}
         margin: 10px 0px;
         padding-bottom: 1em;
 }
+.small .feature-block { height: 240px; }
+
 @media screen and (min-width: 660px) {
     .feature-block { 
-        height: 40vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background: #b4b4b4; 
-        color: white;
-        margin: 10px;
-        padding-bottom: 1em;
+        margin: 0;
+        margin-right: 10px;
     }
 }
 
@@ -587,18 +582,56 @@ tr:nth-child(even) {
 
 /*---- Store styles---- */
 
-.artist-feature {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+#album-cover {
+        width:80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+@media screen and (max-width: 660px) {
+    #album-cover {
+        grid-row: 1/2;
+    }
 }
 
 .album-thumbnail {
-    margin: 1em;
+/*    margin: 1em;*/
 }
 
-.album-thumbnail {
-
+.artist {
+    display: flex; 
+    margin-bottom: 1.25em;}
+.artist img {
+    width: 100px; 
+    height: 100px; 
+    padding-right: 10px;
 }
+.artist div {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.artist p {
+    margin: 0;
+}
+.artist p:first-child {
+    font-size: 1.2em;
+}
+.description {    
+    border-top: 1px solid black;
+}
+
+@media screen and (min-width: 660px) {
+    .artist-feature {
+        padding-right: 1em;
+    }
+}
+
+
+
+
+
 >>>>>>> 4e319e26a83a624e41453e21f61cd72e4ffbc3f3
 
 >>>>>>> 384b04e7987691326d5d8b2a6f586c5b39083b94
