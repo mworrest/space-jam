@@ -432,26 +432,29 @@ p{}
 
 /* -------------- footer -------------- */
 
+@media screen and (min-width: 660px) {
+    #footer.content.flex {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #footer.content.flex {
+        align-items: center;
+    }
+}
+
 .footer{
     list-style-type:none;
-  /*  display: flex;
-    flex:1;
-    flex-direction: row;*/
 
-  }
 }
-.footer li{
-    height: 10rem;
-}
+
 .footer a{
     display:block;
     padding:10px;
     color: #fff;
 }
 
-.footer ul{
-        display:flex;
-        justify-content: space-around;
 }
 .footer li{
     flex: 1 1 1 0;
