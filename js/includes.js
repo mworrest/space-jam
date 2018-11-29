@@ -17,7 +17,22 @@ $(document).ready(function () {
     $('#footer').load('includes/footer.html');
     $('#test-content').load('includes/characters/bugs.html');
     $('#filmmakers').load('includes/filmmakers/reitman.html');
+    $('#new').load('includes/new-characters/lebron.html');
     
+//  New Characters
+    $('#lebron-trigger').click(function (){
+        $('#new').load('includes/new-characters/lebron.html');
+    }); 
+    $('#tina-trigger').click(function (){
+        $('#new').load('includes/new-characters/tina.html');
+    }); 
+    $('#gossamer-trigger').click(function (){
+        $('#new').load('includes/new-characters/gossamer.html');
+    }); 
+    $('#petunia-trigger').click(function (){
+        $('#new').load('includes/new-characters/petunia.html');
+    }); 
+
     
 //  NBA Players
     $('#jordan-trigger').click(function (){
