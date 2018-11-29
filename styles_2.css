@@ -113,7 +113,7 @@ p{}
 /* -------------- Mobile Grid -------------- */
 
 @media screen and (max-width: 660px) {
-    .content.mobile-two-column {grid-template-columns: repeat(2,1fr);}
+    .content.two-column.mobile {grid-template-columns: repeat(2,1fr);}
 }
 
 /* -------------- Row background colors/graphics -------------- */
