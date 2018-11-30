@@ -95,6 +95,11 @@ p{}
 .characterimg{
     margin-left: 30px;
 }
+
+/* -------------- Buttons -------------- */
+
+btn {color: red;}
+
 /* -------------- Layout options -------------- */
 
 @media screen and (min-width: 660px) {
