@@ -92,6 +92,9 @@ p{}
 #test-content p{
     line-height:1.6;
 }
+.characterimg{
+    margin-left: 30px;
+}
 /* -------------- Layout options -------------- */
 
 @media screen and (min-width: 660px) {
@@ -556,7 +559,7 @@ p{}
     width: 160px; height: 160px;
 }
 .headshot.xlarge {
-    width: 220x; height: 220px;
+    width: 220px; height: 220px;
 }
 
 .slick-slide {
