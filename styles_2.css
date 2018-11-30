@@ -695,15 +695,54 @@ tr:nth-child(even) {
     }
 }
 
+/* Space Swag */
+
 .space-swag {
-    padding-right: 0.5em; 
+    padding-right: 0.75em; 
 }
+
+
+.space-swag p {
+        margin-bottom: 0.75em;
+    }
+    
+.space-swag button {
+        margin-bottom: 2.5em;
+    }
+
+/* Buttons */
+
+.next, .download {
+    background-color: #E5AB59; /* Pukey Green */
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.75em;
+}  
 
 /* ---- Game styles ---- */
 
 #nerdluck-match {
-    grid-column: 3 / 4;
+    margin-right: auto;
+    margin-left: auto;
     
+}
+
+.monstar {
+    
+}
+
+.content.five-column.two-column mobile {
+    
+    justify-content: space-between;
+}
+
+
+#quiz-feedback, #match-feedback {
+    margin-bottom: 1em;
 }
 
 /* ---- Star page ---- */
