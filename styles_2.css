@@ -567,15 +567,6 @@ btn {color: red;}
 }
 #new h1{margin-top: 0;padding-left: 20px;}
 
-<<<<<<< HEAD
-.headshot.large {
-    width: 160px; height: 160px;
-}
-.headshot.xlarge {
-    width: 220px; height: 220px;
-}
-=======
->>>>>>> 296ffb48fc46950a8444f281f8eb42ecafbe99e3
 
 .slick-slide {
     padding: 20px 0;
@@ -668,8 +659,6 @@ td, th {
     padding: 8px;
 }
 
-<<<<<<< HEAD
-=======
 tr:nth-child(even) {
     background-color: #dddddd;
 }
@@ -791,6 +780,5 @@ tr:nth-child(even) {
 #star-container {
     justify-content: space-evenly;
 }
->>>>>>> 4e319e26a83a624e41453e21f61cd72e4ffbc3f3
 
->>>>>>> 384b04e7987691326d5d8b2a6f586c5b39083b94
+

@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link href="styles_2.css" rel="stylesheet">
-    
+    <link href="tabs.css" rel="stylesheet">
+    <link href="modal.css" rel="stylesheet">
 </head>
 
 <body>
@@ -292,6 +293,9 @@
                 <h2>Meet the Movie Makers</h2>
             </div>    
             <div class="span-all">
+
+<!-- BEGINNING OF CAROUSEL -->
+
                 <div class="multiple-items content">
                     <div id="reitman-trigger" class="carousel-item"> 
                         <img class="headshot" src="assets/filmmakers/reitman.jpg">
@@ -380,21 +384,338 @@
                         <p class="title">Special Visual Effects</p>
                     </div>
                  </div>
+
+                 <!-- END OF CAROUSEL -->
+
                 <div id="filmmakers" class="content three-column bio_body">
                     bio loads here
                 </div>
             </div> 
         </div>
     </div> 
+
+
+
+
+
+
+
+
     
     <div class="container light-gray"> 
         <div class="content">
             <div class="span-all" style="min-height: 200px;">
                 <h2>Cool Stuff to Look At</h2>
-                <button>Photos from the Film</button>
-                <button>Scene Sketches</button>
-                <button>Behind the Scenes Footage</button>
-                <div>Gallery</div>
+
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'a')" id="defaultOpen">Photos from the Film</button>
+    <button class="tablinks" onclick="openCity(event, 'b')">Scene Sketches</button>
+    <button class="tablinks" onclick="openCity(event, 'c')">Behind the Scenes Footage</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="a" class="tabcontent">
+    <h3>Photos from the Film</h3>
+    <!-- BEGINNING OF CAROUSEL -->
+
+    <!-- MULTIPLE MODALS
+        <div id="content">
+            
+            <a href="#modal1">Open first modal</a><br>
+            <a href="#modal2">Open second modal</a>
+          <div id="modal1"><a href="#">Close</a>This is the first modal</div>
+          <div id="modal2"><a href="#">Close</a>This is the second modal</div>
+        </div>
+    -->
+
+
+    <div class="multiple-items content">
+            <div id="reitman-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/reitman.jpg">
+                <p>Ivan Reitman</p>
+                <p class="title">Producer</p>
+            </div>
+            <div id="medjuck-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/medjuck.jpg">
+                
+                <p>Joe Medjuck</p>
+                <p class="title">Producer</p>
+            </div>
+            <div id="goldberg-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/goldberg.jpg">
+                <p>Daniel Goldberg</p>
+                <p class="title">Producer</p>
+            </div>
+            <div id="pytka-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/pytka.jpg">
+                <p>Joe Pytka</p>
+                <p class="title">Director</p>
+            </div>
+            <div id="falk-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/falk.jpg">
+                <p>David Falk</p>
+                <p class="title">Executive Producer</p>
+            </div>
+            <div id="ross-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/ross.jpg">
+                <p>Ken Ross</p>
+                <p class="title">Executive Producer</p>
+            </div>
+            <div id="kirkland-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/kirkland.jpg">
+                <p>Geofferey Kirkland</p>
+                <p class="title">Production Designer</p>
+            </div>
+            <div id="chapman-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/chapman.jpeg">
+                <p>Michael Chapman</p>
+                <p class="title">Director of Phorography</p>
+            </div>
+            <div id="kahn-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/kahn.jpg">
+                <p>Sheldon Kahn</p>
+                <p class="title">Editor/Co-producer</p>
+            </div>
+            <div id="webb-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/webb.jpg">
+                <p>Gordon Webb</p>
+                <p class="title">Co-producer</p>
+            </div>
+            <div id="polk-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/polk.jpg">
+                <p>Curtis Polk</p>
+                <p class="title">Co-producer</p>
+            </div>
+            <div id="howard-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/newton.jpg">
+                <p>James Newton Howard</p>
+                <p class="title">Composer</p>
+            </div>
+            <div id="smith-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/smith.jpeg">
+                <p>Bruce Smith</p>
+                <p class="title">Co-director of Animation</p>
+            </div>
+            <div id="cervone-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/cervone.jpg">
+                <p>Tony Cervone</p>
+                <p class="title">Co-director of Animation</p>
+            </div>
+            <div id="tippe-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/tippe.jpg">
+                <p>Ron Tippe</p>
+                <p class="title">Animation Producer</p>
+            </div>
+            <div id="perkins-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/perkins.jpg">
+                <p>Bill Perkins</p>
+                <p class="title">Animation Art Director</p>
+            </div>
+            <div id="jones-trigger" class="carousel-item">
+                <img class="headshot" src="assets/filmmakers/jones.jpg">
+                <p>Ed Jones</p>
+                <p class="title">Special Visual Effects</p>
+            </div>
+         </div>
+
+         <!-- END OF CAROUSEL -->
+  </div>
+  
+  <div id="b" class="tabcontent">
+    <h3>Scene Sketches</h3>
+        <!-- BEGINNING OF CAROUSEL -->
+
+        <div class="multiple-items content">
+                <div id="reitman-trigger" class="carousel-item"> 
+                    <img class="headshot" src="assets/filmmakers/reitman.jpg">
+                    <p>Ivan Reitman</p>
+                    <p class="title">Producer</p>
+                </div>
+                <div id="medjuck-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/medjuck.jpg">
+                    
+                    <p>Joe Medjuck</p>
+                    <p class="title">Producer</p>
+                </div>
+                <div id="goldberg-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/goldberg.jpg">
+                    <p>Daniel Goldberg</p>
+                    <p class="title">Producer</p>
+                </div>
+                <div id="pytka-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/pytka.jpg">
+                    <p>Joe Pytka</p>
+                    <p class="title">Director</p>
+                </div>
+                <div id="falk-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/falk.jpg">
+                    <p>David Falk</p>
+                    <p class="title">Executive Producer</p>
+                </div>
+                <div id="ross-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/ross.jpg">
+                    <p>Ken Ross</p>
+                    <p class="title">Executive Producer</p>
+                </div>
+                <div id="kirkland-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/kirkland.jpg">
+                    <p>Geofferey Kirkland</p>
+                    <p class="title">Production Designer</p>
+                </div>
+                <div id="chapman-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/chapman.jpeg">
+                    <p>Michael Chapman</p>
+                    <p class="title">Director of Phorography</p>
+                </div>
+                <div id="kahn-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/kahn.jpg">
+                    <p>Sheldon Kahn</p>
+                    <p class="title">Editor/Co-producer</p>
+                </div>
+                <div id="webb-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/webb.jpg">
+                    <p>Gordon Webb</p>
+                    <p class="title">Co-producer</p>
+                </div>
+                <div id="polk-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/polk.jpg">
+                    <p>Curtis Polk</p>
+                    <p class="title">Co-producer</p>
+                </div>
+                <div id="howard-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/newton.jpg">
+                    <p>James Newton Howard</p>
+                    <p class="title">Composer</p>
+                </div>
+                <div id="smith-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/smith.jpeg">
+                    <p>Bruce Smith</p>
+                    <p class="title">Co-director of Animation</p>
+                </div>
+                <div id="cervone-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/cervone.jpg">
+                    <p>Tony Cervone</p>
+                    <p class="title">Co-director of Animation</p>
+                </div>
+                <div id="tippe-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/tippe.jpg">
+                    <p>Ron Tippe</p>
+                    <p class="title">Animation Producer</p>
+                </div>
+                <div id="perkins-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/perkins.jpg">
+                    <p>Bill Perkins</p>
+                    <p class="title">Animation Art Director</p>
+                </div>
+                <div id="jones-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/jones.jpg">
+                    <p>Ed Jones</p>
+                    <p class="title">Special Visual Effects</p>
+                </div>
+             </div>
+    
+             <!-- END OF CAROUSEL -->
+  </div>
+  
+  <div id="c" class="tabcontent">
+    <h3>Behind the Scenes Footage</h3>
+        <!-- BEGINNING OF CAROUSEL -->
+
+        <div class="multiple-items content">
+                <div id="reitman-trigger" class="carousel-item"> 
+                    <img class="headshot" src="assets/filmmakers/reitman.jpg">
+                    <p>Ivan Reitman</p>
+                    <p class="title">Producer</p>
+                </div>
+                <div id="medjuck-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/medjuck.jpg">
+                    
+                    <p>Joe Medjuck</p>
+                    <p class="title">Producer</p>
+                </div>
+                <div id="goldberg-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/goldberg.jpg">
+                    <p>Daniel Goldberg</p>
+                    <p class="title">Producer</p>
+                </div>
+                <div id="pytka-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/pytka.jpg">
+                    <p>Joe Pytka</p>
+                    <p class="title">Director</p>
+                </div>
+                <div id="falk-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/falk.jpg">
+                    <p>David Falk</p>
+                    <p class="title">Executive Producer</p>
+                </div>
+                <div id="ross-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/ross.jpg">
+                    <p>Ken Ross</p>
+                    <p class="title">Executive Producer</p>
+                </div>
+                <div id="kirkland-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/kirkland.jpg">
+                    <p>Geofferey Kirkland</p>
+                    <p class="title">Production Designer</p>
+                </div>
+                <div id="chapman-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/chapman.jpeg">
+                    <p>Michael Chapman</p>
+                    <p class="title">Director of Phorography</p>
+                </div>
+                <div id="kahn-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/kahn.jpg">
+                    <p>Sheldon Kahn</p>
+                    <p class="title">Editor/Co-producer</p>
+                </div>
+                <div id="webb-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/webb.jpg">
+                    <p>Gordon Webb</p>
+                    <p class="title">Co-producer</p>
+                </div>
+                <div id="polk-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/polk.jpg">
+                    <p>Curtis Polk</p>
+                    <p class="title">Co-producer</p>
+                </div>
+                <div id="howard-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/newton.jpg">
+                    <p>James Newton Howard</p>
+                    <p class="title">Composer</p>
+                </div>
+                <div id="smith-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/smith.jpeg">
+                    <p>Bruce Smith</p>
+                    <p class="title">Co-director of Animation</p>
+                </div>
+                <div id="cervone-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/cervone.jpg">
+                    <p>Tony Cervone</p>
+                    <p class="title">Co-director of Animation</p>
+                </div>
+                <div id="tippe-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/tippe.jpg">
+                    <p>Ron Tippe</p>
+                    <p class="title">Animation Producer</p>
+                </div>
+                <div id="perkins-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/perkins.jpg">
+                    <p>Bill Perkins</p>
+                    <p class="title">Animation Art Director</p>
+                </div>
+                <div id="jones-trigger" class="carousel-item">
+                    <img class="headshot" src="assets/filmmakers/jones.jpg">
+                    <p>Ed Jones</p>
+                    <p class="title">Special Visual Effects</p>
+                </div>
+             </div>
+    
+             <!-- END OF CAROUSEL -->
+  </div>
+
+
+            
             </div>
         </div>
     </div>
@@ -404,13 +725,20 @@
         <div id="footer" class="content flex"></div>
     </div>
 
+
+
+
+
+
 <!--SCRIPTS-->
     <script src="/js/jquery.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+   
     
     <script src="/js/slick.min.js"></script>
     <script src="/js/carousel.js"></script>
+    <script src="/js/tabs.js"></script>
+    <script src="/js/modal.js"></script>
     <script>
         $(document).ready(function(){
             $('.your-class').slick({
