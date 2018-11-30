@@ -586,9 +586,14 @@ btn {color: red;}
     color: white;
     text-decoration: none;
 }
+.slick-slide a, .carousel-item {
+    display: flex!important;
+    flex-direction: column;
+    align-items: center;
+}
 
 .slick-slide img {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     display: unset;
 }
 
