@@ -175,6 +175,7 @@ btn {color: red;}
     align-items: center;
     justify-content: center;
     position: relative;
+/*    overflow-x: hidden;*/
 }
 .hero .content h1 {color: black;}
 
@@ -189,6 +190,7 @@ btn {color: red;}
     background: url(assets/banners/home-curve1.svg) no-repeat;
 }
 .hero .content::before { 
+    
     content: ""; 
     position: absolute;
     bottom: -1px;
@@ -196,6 +198,13 @@ btn {color: red;}
     width: 660px;
     height: 164px;
     background: url(assets/banners/home-curve2.svg) no-repeat;
+}
+
+@media and screen (max-width: 660px) {
+    .hero .content::before 
+    { content: '';}
+    .hero .content::after
+    { content: '';}
 }
 
 
@@ -640,11 +649,17 @@ btn {color: red;}
 /* -------------- footer -------------- */
 
 .footer {background-color: var(--bluegray);}
+.footer.trans {background-color: rgba(0, 0, 0, 0);}
+
+.footer.trans div div {
+    background-color: var(--bluegray);
+}
 
 @media screen and (min-width: 660px) {
     #footer.content.flex {
         flex-direction: row;
     }
+    
 }
 
 @media screen and (max-width: 660px) {

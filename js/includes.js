@@ -21,6 +21,7 @@ $(document).ready(function () {
     
     $('#navbar').load('includes/navbar.html');
     $('#footer').load('includes/footer.html');
+    $('#footer2').load('includes/footer2.html');
     $('#test-content').load('includes/characters/bugs.html');
     $('#nba').load('includes/characters/jordan.html');
 
