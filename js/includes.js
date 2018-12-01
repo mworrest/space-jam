@@ -22,6 +22,8 @@ $(document).ready(function () {
     $('#navbar').load('includes/navbar.html');
     $('#footer').load('includes/footer.html');
     $('#test-content').load('includes/characters/bugs.html');
+    $('#nba').load('includes/characters/jordan.html');
+
     $('#filmmakers').load('includes/filmmakers/reitman.html');
     $('#new').load('includes/new-characters/lebron.html');
     
@@ -42,22 +44,22 @@ $(document).ready(function () {
     
 //  NBA Players
     $('#jordan-trigger').click(function (){
-        $('#test-content').load('includes/characters/jordan.html');
+        $('#nba').load('includes/characters/jordan.html');
     });
     $('#ewing-trigger').click(function (){
-        $('#test-content').load('includes/characters/ewing.html');
+        $('#nba').load('includes/characters/ewing.html');
     });
     $('#barkley-trigger').click(function (){
-        $('#test-content').load('includes/characters/barkley.html');
+        $('#nba').load('includes/characters/barkley.html');
     });
     $('#johnson-trigger').click(function (){
-        $('#test-content').load('includes/characters/johnson.html');
+        $('#nba').load('includes/characters/johnson.html');
     });
     $('#bogues-trigger').click(function (){
-        $('#test-content').load('includes/characters/bogues.html');
+        $('#nba').load('includes/characters/bogues.html');
     });
     $('#bradley-trigger').click(function (){
-        $('#test-content').load('includes/characters/bradley.html');
+        $('#nba').load('includes/characters/bradley.html');
     });
     
     
