@@ -10,7 +10,10 @@
 
 /* -------------- Basic element styles -------------- */
 
+* {transition: all 0.15s ease}
+
 body {
+    
     margin: 0;
     font-size: 1em;
     line-height:1.4;
@@ -389,13 +392,9 @@ btn {color: red;}
     text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-/*  background-color: #555;*/
-    color: white;
-}
-
-.dropdown-content a:hover {
-
+.dropdown:hover .dropbtn,
+.dropdown-content a:hover { 
+    color: #E5AB59; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -457,9 +456,14 @@ btn {color: red;}
         text-align: left;
     }
     .dropdown .dropbtn {}
-    .dropdown { padding-bottom: 1em; padding-top: 1em; border-top: rgba(255, 255, 255, 0.56) solid 1px;}
+    .dropdown { 
+        padding-bottom: 1em; 
+        padding-top: 1em; 
+        border-top: rgba(255, 255, 255, 0.56) solid 1px;
+        margin-left: 1em; margin-right: 1em;
+    }
     .dropdown-content a, .dropdown .dropbtn  { padding-top: 0; padding-bottom: 0;}
-    .dropdown-content a { padding-left: 2em; padding-top: .5em; }
+    .dropdown-content a { padding-left: 1em; padding-top: .5em; }
     
     .topnav.responsive .dropdown {float: none;}
     .topnav.responsive .dropdown-content {position: relative;}
@@ -474,6 +478,7 @@ btn {color: red;}
         display: block;
         width: 100%;
         text-align: left;
+        padding-left: 0;
     }
 }
 
