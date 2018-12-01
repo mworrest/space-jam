@@ -176,16 +176,28 @@ btn {color: red;}
     justify-content: center;
     position: relative;
 }
+.hero .content h1 {color: black;}
+
 
 .hero .content::after { 
     content: ""; 
     position: absolute;
     bottom: -1px;
-    left: -50%;
-    width: 50%;
-    height: 25%;
-    background-image: url(assets/banners/home-curve2.svg)
+    left: 0;
+    width: 660px;
+    height: 164px;
+    background: url(assets/banners/home-curve1.svg) no-repeat;
 }
+.hero .content::before { 
+    content: ""; 
+    position: absolute;
+    bottom: -1px;
+    left: -402px;
+    width: 660px;
+    height: 164px;
+    background: url(assets/banners/home-curve2.svg) no-repeat;
+}
+
 
 .hero .content.flex div {z-index: 2;}
 
