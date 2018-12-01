@@ -232,6 +232,22 @@ btn {color: red;}
     
 }
 
+
+/* -------------- NBA BIOS  -------------- */
+
+.nba_stats{
+ 
+}
+.nba_stats h1{
+    font-size:4em;
+    margin-top:0;
+ 
+}
+
+.nba_stats ul{
+    list-style-type:none;
+}
+
 /* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
 
 .content {
@@ -606,8 +622,13 @@ btn {color: red;}
 .banner.about {
     background-image:url(assets/banners/orange_banner.svg); 
 }
+.banner.nba {
+    background-image:url(assets/banners/orange_banner.svg); 
+    height:auto;
+}
 .banner.games {
     background-image:url(assets/banners/green_banner.svg); 
+    height: auto;
 }
 .banner.store {
     background-image:url(assets/banners/blue_banner.svg); 
@@ -672,8 +693,12 @@ btn {color: red;}
     width: 160px; height: 160px;
 }
 .headshot.xlarge {
-    width: 220x; height: 220px;
+    width: 220px; height: 220px;
 }
+.headshot.xxlarge {
+    width: 320px; height: 320px;
+}
+
 
 #new.content.flex {
     flex-direction: row;
