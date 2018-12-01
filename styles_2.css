@@ -29,7 +29,6 @@ body {
     margin: 0;
     font-size: 1em;
     line-height:1.4;
-    font-family: Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     font-family: 'Open Sans', sans-serif;
@@ -44,7 +43,7 @@ body {
 
 h1 {
     font-size: 1.5em;
-    font-family: impact, sans-serif;
+    font-family: 'Teko', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
 
@@ -421,7 +420,7 @@ btn {color: red;}
     max-width: 1200px;
     margin: 0 auto;
     /*  background-color: #333;*/
-    font-family: impact, sans-serif;
+    font-family: 'Teko', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
