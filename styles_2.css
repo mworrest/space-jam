@@ -4,6 +4,19 @@
     --background: rgb(11, 191, 170);
     --transition: all .15s ease-in-out;
     --transform: scale(1.05);
+    
+    --bluegray: #142945;
+    --bluegray-dark: #0F2138;
+    --green: #C4D973;
+    --green-dark: #AFC267;
+    --pink: #F46288;
+    --pink-dark: #DC587A;
+    --blue: #479EDE;
+    --blue-dark: #2788C4;
+    --orange: #E5AB59;
+    --orange-dark: #CC8C3B;
+    --lightgray: #f2f2f2;
+    --gray: #DEDEDE;
 }
 
 
@@ -84,7 +97,11 @@ div.content.flex {
 }
 /* -------------- Text Styles -------------- */
 
-h1, h2, h3, h4, h5 { font-weight: 200}
+h1, h2, h3, h4, h5, p { 
+    font-weight: 200;
+    color: var(--bluegray);
+}
+.banner h1 { color: white;}
 
 p{}
 
@@ -138,7 +155,7 @@ btn {color: red;}
 /* -------------- Row background colors/graphics -------------- */
 
 .container.header {
-    background-color: #142945;
+    background-color: var(--bluegray);
 }
 
 @media screen and (max-width: 660px) { 
@@ -394,7 +411,7 @@ btn {color: red;}
 
 .dropdown:hover .dropbtn,
 .dropdown-content a:hover { 
-    color: #E5AB59; 
+    color: var(--orange);
 }
 
 .dropdown:hover .dropdown-content {
@@ -733,16 +750,23 @@ tr:nth-child(even) {
 
 /* Buttons */
 
-.next, .download {
-    background-color: #E5AB59; /* Pukey Green */
+button {
     border: none;
     color: white;
-    padding: 0.5em 1em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.75em;
-}  
+    padding: 1em;
+    font-size: 1em;
+    margin-top: .25em; 
+    border-radius: .3em;
+}
+button.small { font-size: .8em; padding: .7em; }
+
+button.primary {background-color: var(--orange);}
+button.secondary {background-color: var(--green-dark);}
+
+button:hover {opacity:.6;}
+button:active {opacity:1; transform: var(--transform);}
+
+
 
 /* ---- Game styles ---- */
 
