@@ -13,6 +13,12 @@ function myFunction() {
 
 
 $(document).ready(function () {
+    
+//    $.fn.load_=$.fn.load;
+//    $.fn.load=function(){
+//        return $.fn.load_.apply(this,arguments).hide().fadeIn();
+//    }
+    
     $('#navbar').load('includes/navbar.html');
     $('#footer').load('includes/footer.html');
     $('#test-content').load('includes/characters/bugs.html');
