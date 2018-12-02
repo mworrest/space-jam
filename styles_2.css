@@ -912,8 +912,12 @@ button:active {opacity:1; transform: var(--transform);}
     
 }
 
-.monstar {
-    
+@media screen and (min-width: 660px){
+
+    .monstar {
+    max-height: 300px;
+    }
+
 }
 
 .content.five-column.two-column mobile {
