@@ -897,6 +897,15 @@ tr:nth-child(even) {
         margin-bottom: 2.5em;
     }
 
+.span-all.swag-section {
+    margin-bottom: 0.75em;
+    margin-top: 0.25em; 
+}
+
+.span-all.swag-description {
+    margin-top: 0;
+}
+
 /* Buttons */
 
 button {
