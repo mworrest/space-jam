@@ -277,6 +277,22 @@ btn {color: red;}
     padding-inline-start:  0px;
 }
 
+/* -------------- LOONEY BIOS  -------------- */
+
+.looney{
+    margin-left:2em;
+}
+.looney h1{
+    font-size:4em;
+    margin-left: 2em;
+    margin-top:0;
+    border-bottom: 2px solid var(--orange);
+    margin-bottom: 1.2em;
+    margin-block-end: 0;
+    margin-inline-start: 0px ;
+
+}
+
 /* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
 
 .content {
