@@ -792,44 +792,7 @@ btn {color: red;}
     color: gray;
 }
 
-/* Display carousel as grid in desktop view and hide grid in mobile view*/
 
-@media screen and (max-width:660px) {
-    .five-column-grid {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 660px) {
-    
-    .five-column-grid {
-        display: grid;
-        grid-column-gap: 0.75em;
-        grid-template-columns: repeat(5,1fr);
-    }    
-
-    .sound-clip-1 {
-        grid-column: 1 / 2;
-    }
-    
-    .sound-clip-2 {
-        grid-column: 2 / 3;
-    }
-    
-    .sound-clip-3 {
-        grid-column: 3 / 4;
-    }
-    
-    .sound-clip-4 {
-        grid-column: 4 / 5;
-    }
-    
-    .sound-clip-5 {
-        grid-column: 5 / 6;
-    }
-    
-    
-}
 /*---table styles---*/
 table {
     border-collapse: collapse;
@@ -954,8 +917,24 @@ button:active {opacity:1; transform: var(--transform);}
     
 }
 
+#match-options {
+    display: grid;
+    grid-template-columns: 18% 22% 21% 30% 9%;
+    margin-top: 1.5em; 
+    margin-right: 1em;
+    margin-left: 1em;
+    justify-content: space-between; 
+}
+
+@media screen and (max-width: 660px) {
+    #match-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .monstar {
-    
+    margin-bottom: 2em;
 }
 
 .content.five-column.two-column mobile {
