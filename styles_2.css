@@ -245,14 +245,23 @@ btn {color: red;}
 /* -------------- NBA BIOS  -------------- */
 
 .nba_stats{
-    margin:0;
- 
+    margin-left: 2em;
 }
+.nba_img{
+    grid-column:1/2;
+    grid-row:1/4;
+    margin-top: 1.5em;
+}
+.nba{
+    
+}
+
 .nba_stats h1{
     font-size:4em;
+    margin-left: 2em;
     margin-top:0;
-    margin-bottom: 1em;
-    margin-block-start: 0;
+    border-bottom: 2px solid red;
+    margin-bottom: 1.2em;
     margin-block-end: 0;
     margin-inline-start: 0px ;
 
@@ -260,6 +269,10 @@ btn {color: red;}
 
 .nba_stats ul{
     list-style-type:none;
+    font-size: 1.2em;
+    line-height:2em;
+    margin-top:2em;
+
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0px ;
@@ -820,8 +833,10 @@ btn {color: red;}
 /*---table styles---*/
 table {
     border-collapse: collapse;
-      border: 1px solid #dddddd;
+    border: 1px solid #dddddd;
     width: 100%;
+    font-size: .8em;
+    margin-top:2em;
 }
 
 td, th {
@@ -834,6 +849,11 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
+th{
+        font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+
+}
 /*---- Store styles---- */
 
 #album-cover {
