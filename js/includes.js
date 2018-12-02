@@ -83,6 +83,9 @@ $(document).ready(function () {
     $('#coyote-trigger').click(function (){
         $('#test-content').load('includes/characters/coyote.html');
     });
+    $('#taz-trigger').click(function (){
+        $('#test-content').load('includes/characters/taz.html');
+    });
     
     
 //  Filmmakers     

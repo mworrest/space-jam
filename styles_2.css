@@ -245,16 +245,26 @@ btn {color: red;}
 /* -------------- NBA BIOS  -------------- */
 
 .nba_stats{
+    margin:0;
  
 }
 .nba_stats h1{
     font-size:4em;
     margin-top:0;
- 
+    margin-bottom: 1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px ;
+
 }
 
 .nba_stats ul{
     list-style-type:none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px ;
+    margin-inline-end: 0px;
+    padding-inline-start:  0px;
 }
 
 /* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
@@ -627,7 +637,9 @@ btn {color: red;}
     }
 }
 
-.banner {background-size: cover;}
+.banner {background-size: cover;
+
+}
 .banner.about {
     background-image:url(assets/banners/orange_banner.svg); 
 }
@@ -638,6 +650,7 @@ btn {color: red;}
 .banner.games {
     background-image:url(assets/banners/green_banner.svg); 
     height: auto;
+    margin-top:3em;
 }
 .banner.store {
     background-image:url(assets/banners/blue_banner.svg); 
@@ -711,7 +724,7 @@ btn {color: red;}
     width: 220px; height: 220px;
 }
 .headshot.xxlarge {
-    width: 320px; height: 320px;
+    width: 280px; height: 280px;
 }
 
 
