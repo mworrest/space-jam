@@ -123,7 +123,7 @@ $(document).ready(function () {
         $('#filmmakers').load('includes/filmmakers/polk.html');
     });
     $('#howard-trigger').click(function (){
-        $('#filmmakers').load('includes/filmmakers/newton.html');
+        $('#filmmakers').load('includes/filmmakers/howard.html');
     });
     $('#smith-trigger').click(function (){
         $('#filmmakers').load('includes/filmmakers/smith.html');

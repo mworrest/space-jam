@@ -25,19 +25,12 @@
 * {transition: all 0.15s ease}
 
 body {
-    
     margin: 0;
     font-size: 1em;
     line-height:1.4;
     display: grid;
     grid-template-columns: 1fr;
     font-family: 'Open Sans', sans-serif;
-/*
-    background-image: url(assets/banners/bg_texture.svg);
-    background-repeat: repeat-x;
-    background-size: auto;
-    background-position: bottom; 
-*/
     color: var(--bluegray);
 }
 
@@ -84,8 +77,6 @@ img {
     display: flex;
     justify-content: space-between;
 }
-
-.content.footer { }
 
 div.content.flex {
     display: flex;
@@ -156,6 +147,8 @@ btn {color: red;}
 
 .container.header {
     background-color: var(--bluegray);
+/*    border-bottom: 2px solid rgba(255, 255, 255, 0.1);*/
+    z-index: 1000;
 }
 
 @media screen and (max-width: 660px) { 
@@ -171,40 +164,26 @@ btn {color: red;}
 /* -------------- Home hero banner -------------- */
 
 .hero .content {
-    height: 30vh;
+    height: 220px;
     align-items: center;
     justify-content: center;
     position: relative;
 /*    overflow-x: hidden;*/
 }
-.hero .content h1 {color: black;}
-
-
-.hero .content::after { 
-    content: ""; 
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 660px;
-    height: 164px;
-    background: url(assets/banners/home-curve1.svg) no-repeat;
-}
-.hero .content::before { 
-    
-    content: ""; 
-    position: absolute;
-    bottom: -1px;
-    left: -402px;
-    width: 660px;
-    height: 164px;
-    background: url(assets/banners/home-curve2.svg) no-repeat;
+.hero .content h1 {
+    color: var(--green);
+    text-shadow: -7px 7px var(--bluegray-dark);
+    font-size: 4.5em;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
 }
 
-@media and screen (max-width: 660px) {
-    .hero .content::before 
-    { content: '';}
-    .hero .content::after
-    { content: '';}
+.hero .content h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', sans-serif;
+    color: var(--green);
 }
 
 
@@ -212,13 +191,16 @@ btn {color: red;}
 
 .hero {
     background-image: url(assets/banners/hero_banner.svg);
-/*
-    background-color: rgba(74, 20, 140, 0.5);
-    background-blend-mode: multiply;
-*/
     background-size: cover;
     background-position: center;
 }
+
+.hero .content img.one {
+    display: none;
+}
+
+
+.hero .content img.two { display: none;}
 
 .hero {
 /*    color:white;*/
@@ -228,7 +210,73 @@ btn {color: red;}
 .hero h1 { font-size: 2.5em; }
 .hero h2 { font-size: 1.2em; }
 
+.hero .content::before { 
+    display: block;
+    content: ""; 
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 242px;
+    height: 197px;
+    background: url(assets/banners/hero-image.png) no-repeat;
+    background-size:90%;
+}
+
+@media screen and (max-width: 660px) { 
+    .hero .content h1 {
+        text-align: left;
+        line-height: .9em;
+        padding-left: .25em;
+    }
+    .hero .content.flex div {
+        align-self: flex-start;
+    }
+}
+
 @media screen and (min-width: 660px) { 
+    .mobile-only {display: none;}
+    .hero .content {
+        min-height: 500px
+    }
+    .hero .content h1 {
+        color: var(--green);
+        text-shadow: -7px 7px var(--bluegray);
+        font-size: 8em;
+        margin: 0;
+    }
+    
+    .hero .content::before { 
+        display: block;
+        content: ""; 
+        position: absolute;
+        bottom: 0px;
+        right: -0px;
+        width: 623px;
+        height: 480px;
+        background: url(assets/banners/hero-image.png) no-repeat;
+        background-size:85%;
+    }
+    .hero .content img.one { 
+        display: block;
+        content: ""; 
+        position: absolute;
+        bottom: -1px;
+        left: -90px;
+        width: 800px;
+        height: 199px;
+        background: url(assets/banners/home-curve1.svg) no-repeat;
+    }
+    .hero .content img.two { 
+        display: block;
+        content: ""; 
+        position: absolute;
+        bottom: -1px;
+        left: -402px;
+        width: 660px;
+        height: 199px;
+        background: url(assets/banners/home-curve2.svg) no-repeat;
+    }
+    
 
     .hero h1 { font-size: 3.5em; }
     .hero h2 { font-size: 1.5em; }
@@ -247,6 +295,11 @@ btn {color: red;}
 .nba_stats{
     margin-left: 2em;
 }
+
+#filmmakers .nba_stats{ 
+    grid-column: 2/4;
+}
+
 .nba_img{
     grid-column:1/2;
     grid-row:1/4;
@@ -256,7 +309,7 @@ btn {color: red;}
     
 }
 
-.nba_stats h1{
+.nba_stats h1 {
     font-size:4em;
     margin-left: 2em;
     margin-top:0;
@@ -676,7 +729,7 @@ btn {color: red;}
 .banner.games {
     background-image:url(assets/banners/green_banner.svg); 
     height: auto;
-    margin-top:3em;
+/*    margin-top:3em;*/
 }
 .banner.store {
     background-image:url(assets/banners/blue_banner.svg); 
@@ -686,6 +739,33 @@ btn {color: red;}
 }
 
 /* -------------- footer -------------- */
+
+
+
+#footer2 {padding-bottom: 0; height: 250px;}
+
+.footer .content div {position: relative;}
+
+.footer .content div::before { 
+    display: block;
+    content: ""; 
+    position: absolute;
+    bottom: 0px;
+    right: 398px;
+    width: 501px;
+    height: 250px;
+    background: url(assets/banners/home-darkcurve2.svg) no-repeat;
+}
+.footer .content div::after { 
+    display: block;
+    content: ""; 
+    position: absolute;
+    bottom: -20px;
+    right: -546px;
+    width: 547px;
+    height: 250px;
+    background: url(assets/banners/home-darkcurve1.svg) no-repeat;
+}
 
 .footer {background-color: var(--bluegray);}
 .footer.trans {background-color: rgba(0, 0, 0, 0);}
@@ -737,11 +817,16 @@ btn {color: red;}
 /* -------------- Carousel Styles -------------- */
 
 .headshot {
-    width:60px; height: 60px;
+    width:80px; height: 80px;
     margin-bottom: 15px;
     border-radius:50%;
-    border: 1px solid black;
+    border: 4px solid rgba(255, 255, 255, 0);
 }
+
+.slick-slide:hover img {
+    border: 4px solid var(--orange);
+}
+
 
 .headshot.large {
     width: 160px; height: 160px;
@@ -786,7 +871,7 @@ btn {color: red;}
 }
 
 .slick-slide:hover p, .slick-slide:focus p {
-    color: red;
+    color: var(--orange);
 }
 .slick-slide:hover img, .slick-slide:focus img {
     transform:  var(--transform);
@@ -802,7 +887,7 @@ btn {color: red;}
 }
 .slick-prev:before, .slick-next:before {
     font-size: 38px;
-    color: gray;
+    color: var(--orange);
 }
 
 
