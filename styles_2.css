@@ -35,10 +35,10 @@ body {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.8m;
     font-family: 'Teko', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
 }
 
@@ -146,7 +146,7 @@ btn {color: red;}
 /* -------------- Row background colors/graphics -------------- */
 
 .container.header {
-    background-color: var(--bluegray);
+    background-color: var(--bluegray-dark);
 /*    border-bottom: 2px solid rgba(255, 255, 255, 0.1);*/
     z-index: 1000;
 }
@@ -171,7 +171,7 @@ btn {color: red;}
 /*    overflow-x: hidden;*/
 }
 .hero .content h1 {
-    color: var(--green);
+    color: var(--orange);
     text-shadow: -7px 7px var(--bluegray-dark);
     font-size: 4.5em;
     margin: 0;
@@ -182,8 +182,9 @@ btn {color: red;}
 .hero .content h2 {
     margin: 0;
     padding: 0;
-    font-family: 'Teko', sans-serif;
-    color: var(--green);
+    font-family: 'Open-sans', sans-serif;
+    font-style: italic;
+    color: var(--bluegray);
 }
 
 
@@ -767,7 +768,7 @@ btn {color: red;}
     background: url(assets/banners/home-darkcurve1.svg) no-repeat;
 }
 
-.footer {background-color: var(--bluegray);}
+
 .footer.trans {background-color: rgba(0, 0, 0, 0);}
 
 .footer.trans div div {
@@ -799,6 +800,8 @@ btn {color: red;}
 
 .footer{
     list-style-type:none;
+        background-color: var(--bluegray);
+
 
 }
 
