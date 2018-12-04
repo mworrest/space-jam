@@ -5,6 +5,7 @@
     --transform: scale(1.05);
     
     --bluegray: #142945;
+    --bluegray-fade: rgba(20, 41, 69, 0.5);
     --bluegray-dark: #0F2138;
     --green: #C4D973;
     --green-dark: #AFC267;
@@ -422,9 +423,14 @@ btn {color: red;}
     border-top-left-radius: .75em;
     border-top-right-radius: .75em;
     padding: 1em; 
-    background-color: white; 
-    border: 1px solid;
+    color: white; 
+    border-bottom: 3px solid;
 }
+
+.block-title {background-color: var(--bluegray);}
+
+.block-icon {background-color: var(--bluegray-fade);}
+
 .feature-block.small .block-title {
     border-radius: .75em;
     height: 20vh;
@@ -436,11 +442,16 @@ btn {color: red;}
 
 
 .about div { border-color: var(--orange);} 
-.about .block-icon, .about .feature-block.small .block-title { background-color: var(--orange);} 
 .games div { border-color: var(--green);} 
-.games .block-icon, .games .feature-block.small .block-title { background-color: var(--green);} 
 .store div { border-color: var(--blue);} 
+
+
+
+/*
+.about .block-icon, .about .feature-block.small .block-title { background-color: } 
+.games .block-icon, .games .feature-block.small .block-title { background-color: var(--green);} 
 .store .block-icon { background-color: var(--blue);} 
+*/
 
 .block-icon { 
     border-bottom-left-radius: .7em;
@@ -451,15 +462,11 @@ btn {color: red;}
     height: 30vh;
     background-size: cover;
     background-blend-mode: luminosity;
-    border: 1px solid var(--orange);
 }
-.block-icon img {padding-bottom: 2em;}
+.block-icon {padding-bottom: 2em;}
 
-/*
 .block-icon.making { background-image: url(assets/space-jam.jpg); }
-.block-icon.lineup { background-image: url(assets/space-jam.jpg); }
 .block-icon.bball { background-image: url(assets/space-jam.jpg); }
-*/
 
 @media screen and (min-width: 660px) {
     .block-area a .feature-block {
