@@ -44,6 +44,7 @@ h1 {
 
 .feature-block, a {
     color:inherit;
+    background-color: var(--bluegray-dark);
     text-decoration: none;
  }
 
