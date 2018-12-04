@@ -5,7 +5,7 @@
     --transform: scale(1.05);
     
     --bluegray: #142945;
-    --bluegray-fade: rgba(20, 41, 69, 0.5);
+    --bluegray-fade: rgba(20, 41, 69, 0.6);
     --bluegray-dark: #0F2138;
     --green: #C4D973;
     --green-dark: #AFC267;
@@ -45,7 +45,7 @@ h1 {
 
 .feature-block, a {
     color:inherit;
-    background-color: var(--bluegray-dark);
+/*    background-color: var(--bluegray-dark);*/
     text-decoration: none;
  }
 
@@ -164,7 +164,7 @@ btn {color: red;}
     }
 }
 
-.light-gray {background: lightgray;}
+.light-gray {background-color: var(--lightgray);}
 
 .banner, .gray {background: gray;
 }
@@ -424,12 +424,13 @@ btn {color: red;}
     display: flex;
     text-align: center;
     border-radius: .75em;
+    
 }
 
 .block-title { 
     border-top-left-radius: .75em;
     border-top-right-radius: .75em;
-    padding: 1em; 
+    padding: 1.25em; 
     color: white; 
     border-bottom: 3px solid;
 }
@@ -438,42 +439,58 @@ btn {color: red;}
 
 .block-icon {background-color: var(--bluegray-fade);}
 
-.feature-block.small .block-title {
-    border-radius: .75em;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-}
-
-
 .about div { border-color: var(--orange);} 
 .games div { border-color: var(--green);} 
 .store div { border-color: var(--blue);} 
 
 
-
-/*
-.about .block-icon, .about .feature-block.small .block-title { background-color: } 
-.games .block-icon, .games .feature-block.small .block-title { background-color: var(--green);} 
-.store .block-icon { background-color: var(--blue);} 
-*/
-
 .block-icon { 
-    border-bottom-left-radius: .7em;
-    border-bottom-right-radius: .7em;
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
     display: flex; 
     justify-content: center;
     align-content: center;
     height: 30vh;
     background-size: cover;
-    background-blend-mode: luminosity;
+    background-position: center center;
+    background-blend-mode: hard-light;
+    transition: all 0.15s ease;
 }
-.block-icon {padding-bottom: 2em;}
 
-.block-icon.making { background-image: url(assets/space-jam.jpg); }
-.block-icon.bball { background-image: url(assets/space-jam.jpg); }
+.tall .block-icon { height: 50vh; }
+
+.feature-block:hover .block-icon {
+    background-blend-mode: normal;
+/*    background-size: 110%;*/
+}
+
+.block-icon.making { background-image: url(assets/feature-blocks/making.jpg);}
+.block-icon.lineup { background-image: url(assets/feature-blocks/team.jpg);}
+.block-icon.bball { background-image: url(assets/feature-blocks/nba.png); }
+.block-icon.trivia { background-image: url(assets/feature-blocks/jordan-buggs.jpg); }
+.block-icon.match { background-image: url(assets/feature-blocks/monstars.jpg); }
+
+.feature-block.small .block-icon { 
+    height: 30vh; 
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.feature-block.small .block-icon h2 { 
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .065em;
+    padding: .5em 0;
+    background-color: var(--bluegray);
+}
+.small .block-icon {
+    background-color: var(--blue);
+    background-blend-mode: hard-light;
+}
 
 @media screen and (min-width: 660px) {
     .block-area a .feature-block {
@@ -527,8 +544,7 @@ btn {color: red;}
 }
 
 .feature-block:hover > div img, 
-.social-link:hover, 
-.feature-block.small:hover > div h2 { 
+.social-link:hover { 
     transform: var(--transform); 
 }
 
