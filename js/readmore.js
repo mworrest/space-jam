@@ -30,9 +30,9 @@
         speed: 100,
         collapsedHeight: 312,
         heightMargin: 16,
-        moreLink: '<a href="#">Read More</a>',
-        lessLink: '<a href="#">Close</a>',
-        embedCSS: true,
+        moreLink: '<a class="gradient" href="#"><div class="read-button">Read More</div></a>',
+        lessLink: '<a class="" href="#"><div class="read-button">Read Less</div></a>',
+        embedCSS: false,
         blockCSS: 'display: block; width: 100%;',
         startOpen: false,
 
