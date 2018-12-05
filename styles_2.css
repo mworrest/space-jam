@@ -1124,7 +1124,7 @@ th{
 
 .center {align-self: center;}
 
-button, .read-button {
+button {
     border: none;
     color: white;
     padding: 1em;
@@ -1138,7 +1138,15 @@ button.primary {background-color: var(--orange);}
 button.secondary {background-color: var(--green-dark);}
 
 .read-button {
-    background-color: var(--green-dark); 
+    border: none;
+    color: var(--orange);
+    padding: .5em 1em;
+    font-size: 1em;
+    margin-top: .25em; 
+    border-radius: .3em;
+}
+.read-button {
+    border: 2px solid var(--orange); 
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1155,7 +1163,8 @@ a.gradient::before {
 }
 
 button:hover {opacity:.6;}
-button:active {opacity:1; transform: var(--transform);}
+.read-button:hover {background-color: var(--orange); color: white;}
+button:active, .read-button:active {opacity:1; transform: var(--transform);}
 
 
 
