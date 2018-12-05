@@ -37,22 +37,19 @@ body {
 }
 
 h1 {
-    font-size: 1.8m;
+    font-size: 2m;
     font-family: 'Teko', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top:0;
 }
-h2 {font-weight:100;}
+h2 {font-weight:400;}
 
 a {text-decoration: none;}
 
 .feature-block, a {
     color:inherit;
-<<<<<<< HEAD
 /*    background-color: var(--bluegray-dark);*/
-=======
->>>>>>> 6a8f2f3943ea2a520b68d31bf419511f7faadd18
     text-decoration: none;
  }
 
@@ -507,18 +504,34 @@ p {font-weight: 100;}
     border-bottom: 3px solid;
 }
 
-.block-title {background-color: var(--bluegray);}
+.block-title {background-color:#efefef;}
+.block-title:hover {background-color: var(--orange);
+        font-weight:bold;
+            color:#fff;
+}
 
 .block-icon {background-color: var(--bluegray-fade);}
 
-.about div { border-color: var(--orange);} 
+.block-icon about {background-color: var(--orange);}
+
+.about div { 
+    border-color: var(--orange);
+
+} 
+.about div h2{ 
+    color: var(--bluegray);
+text-align: center;
+} 
+.about div h2:hover{ 
+    color: #fff;
+} 
 .games div { border-color: var(--green);} 
 .store div { border-color: var(--blue);} 
 
 
 .block-icon { 
-    border-bottom-left-radius: .7rem;
-    border-bottom-right-radius: .7rem;
+   /* border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;*/
     display: flex; 
     justify-content: center;
     align-content: center;
@@ -531,6 +544,7 @@ p {font-weight: 100;}
 
 .feature-block:hover .block-icon {
     background-blend-mode: normal;
+ 
 /*    background-size: 110%;*/
 }
 
