@@ -1231,6 +1231,7 @@ article br {line-height: 2.5em;}
 
 .monstar {
     margin-bottom: 2em;
+    background-color: var(--lightgray);
 }
 
 .content.five-column.two-column mobile {
@@ -1252,11 +1253,16 @@ article br {line-height: 2.5em;}
 
 /* ---- Star page ---- */
 
+#star-container{
+    padding: 1.5em;
+}
+
 #quote {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 
 #citation {
@@ -1264,10 +1270,15 @@ article br {line-height: 2.5em;}
     grid-row: 2 / 3;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 
-#star-container {
-    justify-content: space-evenly;
+#star-grid {
+    justify-content: center;
+
 }
 
-
+.star {
+    text-align: center;
+    margin: 3em 3em 0 0;
+}
