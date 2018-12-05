@@ -333,7 +333,7 @@
                         <p class="title">Production Designer</p>
                     </div>
                     <div id="chapman-trigger" class="carousel-item">
-                        <img class="headshot" src="assets/filmmakers/chapman.jpeg">
+                        <img class="headshot" src="assets/filmmakers/chapman.jpg">
                         <p>Michael Chapman</p>
                         <p class="title">Director of Phorography</p>
                     </div>
@@ -423,7 +423,7 @@
         </div>
     -->
 
-    <div class="multiple-items content">
+    <div class="media-gallery content">
         <div id="" class="carousel-item">
             <img class="frame" src="assets/photos-from-film/photos-from-film-1.jpg">
         </div>
@@ -459,7 +459,7 @@
   
   <div id="b" class="tabcontent">
     <h3>Scene Sketches</h3>
-    <div class="multiple-items content">
+    <div class="media-gallery content">
         <div id="" class="carousel-item">
                 <img class="frame" src="assets/filmmakers/reitman.jpg">
             </div>
@@ -517,7 +517,7 @@
   
   <div id="c" class="tabcontent">
     <h3>Behind the Scenes Footage</h3> 
-    <div class="multiple-items content">
+    <div class="media-gallery content">
         <div id="" class="carousel-item">
             <img class="frame"  src="assets/video/video-thumb-1.jpg">
         </div>
@@ -570,11 +570,16 @@
     </script>
 
     <script>
-      $('.multiple-items').slick({
+        $('.multiple-items').slick({
             infinite: true,
             slidesToShow: 5,
             slidesToScroll: 1
-      });
+        })
+        $('.media-gallery').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1
+        });
     </script>
     
     <script src="/js/includes.js"></script>

@@ -111,8 +111,10 @@ p {font-weight: 100;}
 #test-content p{
     line-height:1.6;
 }
-.characterimg{
-    margin-left: 30px;
+@media screen and (min-width: 660px) {
+    .characterimg{
+        margin-left: 30px;
+    }
 }
 
 /* -------------- Buttons -------------- */
@@ -312,49 +314,70 @@ btn {color: red;}
 
 /* -------------- NBA BIOS  -------------- */
 
-.nba_stats{
-    margin-left: 2em;
-}
-
-#filmmakers .nba_stats{ 
-    grid-column: 2/4;
-}
-
-.nba_img{
-    grid-column:1/2;
-    grid-row:1/4;
-    margin-top: 1.5em;
-}
-.nba{
-    
-}
 
 .nba_stats h1 {
     font-size:4em;
-    margin-left: 2em;
-    margin-top:0;
     border-bottom: 2px solid var(--orange);
-    margin-bottom: 1.2em;
-    margin-block-end: 0;
-    margin-inline-start: 0px ;
-
+    margin-bottom: .25em;
+    padding-bottom: .25em;
+}
+.nba_img { 
+    display: flex;
+    justify-content: center;
 }
 
-.nba_stats ul{
-    list-style-type:none;
-    font-size: 1.2em;
-    line-height:2em;
-    margin-top:1.2em;
+@media screen and (min-width: 660px) {
+    
+    .nba_stats{
+        margin-left: 2em;
+    }
 
-    margin-inline-start: 0px ;
-    padding-inline-start:  0px;
+    #filmmakers .nba_stats{ 
+        grid-column: 2/4;
+    }
+
+    .nba_img{
+        grid-column:1/2;
+        grid-row:1/4;
+        margin-top: 1.5em;
+    }
+    .nba{
+
+    }
+
+    .nba_stats h1 {
+        font-size:4em;
+        margin-left: 2em;
+        margin-top:0;
+        border-bottom: 2px solid var(--orange);
+        margin-bottom: 1.2em;
+        margin-block-end: 0;
+        margin-inline-start: 0px ;
+
+    }
+
+    .nba_stats ul{
+        list-style-type:none;
+        font-size: 1.2em;
+        line-height:2em;
+        margin-top:1.2em;
+        margin-inline-start: 0px ;
+        padding-inline-start:  0px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .nba_stats h1 { 
+        text-align: center;
+        line-height: 1em;
+        font-size: 3em;
+    }
+    .nba_stats ul {
+        padding-inline-start:  1.25em;
+    }
 }
 
 /* -------------- LOONEY BIOS  -------------- */
 
-.looney{
-    margin-left:2em;
-}
 .looney h1{
     font-size:4em;
     margin-left: 2em;
@@ -363,7 +386,24 @@ btn {color: red;}
     margin-bottom: 1.2em;
     margin-block-end: 0;
     margin-inline-start: 0px ;
-
+}
+@media screen and (min-width: 660px) { 
+    .looney{
+        margin-left:2em;
+    }
+}
+@media screen and (max-width: 660px) { 
+    .bio_body {
+        display: flex;
+        flex-direction: column;
+    }
+    .bio_body img {
+        align-self: center;
+    }
+    .looney h1{ 
+        text-align: center;
+        line-height: 1em;
+    }
 }
 
 /* -------------- TEMPORARY STYLES FOR TESTING ONLY -------------- */
@@ -879,7 +919,13 @@ btn {color: red;}
 
 /* -------------- Carousel Styles -------------- */
 
-.frame {}
+.frame {height: 70px; width: auto;}
+
+@media screen and (min-width: 660px) { 
+    .frame {height: 150px;}
+}
+
+.media-gallery {padding-left:2.75rem; padding-right:2.75rem;}
 
 .headshot {
     width:80px; height: 80px;
@@ -918,6 +964,9 @@ btn {color: red;}
     width: 280px; height: 280px;
 }
 
+@media screen and (max-width: 990px) {
+    .headshot.xxlarge {width:200px;height:200px;}
+}
 
 #new.content.flex {
     flex-direction: row;
