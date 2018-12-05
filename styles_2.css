@@ -41,8 +41,10 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top:0;
-
 }
+h2 {font-weight:100;}
+
+a {text-decoration: none;}
 
 .feature-block, a {
     color:inherit;
@@ -100,7 +102,7 @@ div.content.flex {
     font-size: 2em;
     color: white;}
 
-p{}
+p {font-weight: 100;}
 
 #more {display: none;}
 
@@ -147,6 +149,12 @@ btn {color: red;}
     }
     
 }
+/*--------------- Column Spacing -----------*/
+.otherguys{
+    margin-right: 2em;
+}
+
+
 
 /* -------------- Mobile Grid -------------- */
 
@@ -570,10 +578,16 @@ btn {color: red;}
     border-top: solid black 1px;
 } 
 
-.link-list a img {
-    flex: 0;
-    margin-right: 1em;
-    width: 40px; height: 40px;
+.link-list p { 
+/*    font-family: 'Teko', sans-serif;*/
+/*    text-transform: uppercase;*/
+/*    letter-spacing: .065em;*/
+    font-size: 1.25em;
+    margin-top: .25em;
+}
+.link-list a:hover {
+    color: var(--green);
+    border-color: var(--green);
 }
 
 .link-list.news a { flex-direction: column; }
@@ -865,6 +879,8 @@ btn {color: red;}
 
 /* -------------- Carousel Styles -------------- */
 
+.frame {}
+
 .headshot {
     width:80px; height: 80px;
     margin-bottom: 15px;
@@ -921,7 +937,7 @@ btn {color: red;}
 }
 .slick-slide p {
     margin: 0;
-     text-align: center;
+    text-align: center;
     font-weight:bold;
     color: var(--bluegray);
 
