@@ -879,6 +879,8 @@ btn {color: red;}
 
 /* -------------- Carousel Styles -------------- */
 
+.frame {}
+
 .headshot {
     width:80px; height: 80px;
     margin-bottom: 15px;
