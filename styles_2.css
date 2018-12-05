@@ -1184,6 +1184,12 @@ article br {line-height: 2.5em;}
     margin: 1em 0 0 0;
     border: none;
 }
+
+.article-blocks .read-button:hover {
+    color: var(--bluegray);
+    background-color: white;
+}
+
 .article-blocks a.gradient::before {
     content: '';
     position: absolute;
