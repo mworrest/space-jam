@@ -494,12 +494,15 @@ p {font-weight: 100;}
     display: flex;
     text-align: center;
     border-radius: .75em;
+    padding-right:1em;
+
 }
 
 .block-title { 
     border-top-left-radius: .75em;
     border-top-right-radius: .75em;
-    padding: 1.25em; 
+    padding-left: 1.25em; 
+    padding-top:.5em;
     color: white; 
     border-bottom: 3px solid;
 }
@@ -518,20 +521,36 @@ p {font-weight: 100;}
     border-color: var(--orange);
 
 } 
-.about div h2{ 
+.about div:hover { 
+   color: #fff;
+    font-weight:bold;
+} 
+.about div h2 { 
     color: var(--bluegray);
-text-align: center;
+text-align: left;
+} 
+.about div p { 
+    color: var(--bluegray);
+    text-align: left;
+    margin-top:0em;
+    margin-bottom:.5em;
+
+} 
+.about div p:hover { 
+ 
+
 } 
 .about div h2:hover{ 
-    color: #fff;
+   /* color: #fff;
+    font-weight:bold;*/
 } 
 .games div { border-color: var(--green);} 
 .store div { border-color: var(--blue);} 
 
 
 .block-icon { 
-   /* border-bottom-left-radius: .7rem;
-    border-bottom-right-radius: .7rem;*/
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
     display: flex; 
     justify-content: center;
     align-content: center;
