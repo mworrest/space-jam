@@ -644,6 +644,27 @@
     <script src="/js/carousel.js"></script>
     <script src="/js/tabs.js"></script>
     <script src="/js/modal.js"></script>
+
+
+<!-- BEGINNING TEST MODAL SCRIPT 
+
+<script>$(window).load(function() {
+        $('img').on('click', function() {
+            var sr;
+$(this).closest('.slides').find('.media-gallery').each(function(index) {
+    if ($(this).find('.slide').css("opacity") === 1) {
+        sr = $(this).find('img').attr('src');
+    }
+});
+            $('#mimg').attr('src', sr);
+            $('#myModal').modal('show');
+        });
+    });</script>
+
+ END TEST MODAL SCRIPT -->
+
+
+
     <script>
         $(document).ready(function(){
             $('.your-class').slick({
@@ -662,7 +683,9 @@
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1
-        });
+            
+        })
+        ;
     </script>
     
     <script src="/js/includes.js"></script>
