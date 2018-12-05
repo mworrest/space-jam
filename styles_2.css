@@ -316,6 +316,7 @@ p {font-weight: 100;}
     border-bottom: 2px solid var(--orange);
     margin-bottom: .25em;
     padding-bottom: .25em;
+    
 }
 .nba_img { 
     display: flex;
@@ -366,8 +367,11 @@ p {font-weight: 100;}
         text-align: center;
         line-height: 1em;
         font-size: 3em;
+        text-align:center;
     }
     .nba_stats ul {
+            list-style-type:none;
+        text-align:center;
         padding-inline-start:  1.25em;
     }
 }
