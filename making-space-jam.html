@@ -1002,13 +1002,18 @@
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1
-        })
+        });
 
-      
-        
-
-        ;
     </script>
+
+    <script>var slider = $('.abcontent').slick({    
+    });
+    
+    $('a').on("click", function() {
+        $('.tabcontent').css('display', 'block'); 
+        $('.abcontent').get(0).slick.setPosition()
+    });
+</script>
 
     <script src="/js/includes.js"></script>
 
