@@ -28,8 +28,8 @@
   var readmore = 'readmore',
       defaults = {
         speed: 100,
-        collapsedHeight: 312,
-        heightMargin: 16,
+        collapsedHeight: 200,
+        heightMargin: 10,
         moreLink: '<a class="gradient" href="#"><div class="read-button">Read More</div></a>',
         lessLink: '<a class="" href="#"><div class="read-button">Read Less</div></a>',
         embedCSS: false,

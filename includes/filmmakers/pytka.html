@@ -8,14 +8,31 @@
     <h1 class="span-all nba_stats">Joe Pytka</h1>
 </div> 
 <div class="span-three nba_stats">
-    <p>Director JOE PYTKA, considered by most to be the pre-eminent director of television commercials, makes only his second foray into the feature-film arena with "Space Jam."</p>
-
-        <p>Pytka with Michael Jordan With more than 5,000 TV spots to his credit, many of Pytka's creations have become part of the American cultural vernacular. These advertising classics include the "Thank you for your support" campaign for Bartles & Jaymes; the "Bo knows" ads for Nike; Michael Jordan and Larry Bird playing "Nothing but net" for McDonald's; and Ray Charles singing "Uh huh" for Diet Pepsi. He is also responsible for the hot-rod infant in the DuPont Stainmaster ads, and for bringing together former Governors Ann Richards and Mario Cuomo in their Frito-Lay commercial.</p>
-
-            <p>Pytka, born and raised in the Pittsburgh suburb of Braddock, Pennsylvania, has always had a flair for things visual. At the age of 8, he was studying art at Pittsburgh's Carnegie Museum. Accepted into the art program at Carnegie Tech (now Carnegie-Mellon University), he instead opted to follow his Fathers' advice to "do something practical" and enrolled at the University of Pittsburgh to study chemical engineering. That brief sojourn proved to be, in his own words, "disastrous," and Pytka took a job at a film lab in Pittsburgh. There, he learned the basics of his craft.</p>
-
-                <p>His first break came when he got the chance to shoot some documentary footage for WQED, the public broadcasting station in Pittsburgh. He started shooting commercials to supplement his income and hasn't stopped since.</p>
-
-                    <p>Pytka has directed one other feature film, "Let It Ride," which starred Richard Dreyfuss, and currently has other projects in development through his Venice, California-based production company, PYTKA.
+    <p id="readmore">Director JOE PYTKA, considered by most to be the pre-eminent director of television commercials, makes only his second foray into the feature-film arena with "Space Jam."<br><br>
+        
+    Pytka with Michael Jordan With more than 5,000 TV spots to his credit, many of Pytka's creations have become part of the American cultural vernacular. These advertising classics include the "Thank you for your support" campaign for Bartles & Jaymes; the "Bo knows" ads for Nike; Michael Jordan and Larry Bird playing "Nothing but net" for McDonald's; and Ray Charles singing "Uh huh" for Diet Pepsi. He is also responsible for the hot-rod infant in the DuPont Stainmaster ads, and for bringing together former Governors Ann Richards and Mario Cuomo in their Frito-Lay commercial.<br><br>
+        
+    Pytka, born and raised in the Pittsburgh suburb of Braddock, Pennsylvania, has always had a flair for things visual. At the age of 8, he was studying art at Pittsburgh's Carnegie Museum. Accepted into the art program at Carnegie Tech (now Carnegie-Mellon University), he instead opted to follow his Fathers' advice to "do something practical" and enrolled at the University of Pittsburgh to study chemical engineering. That brief sojourn proved to be, in his own words, "disastrous," and Pytka took a job at a film lab in Pittsburgh. There, he learned the basics of his craft.<br><br>
+        
+    His first break came when he got the chance to shoot some documentary footage for WQED, the public broadcasting station in Pittsburgh. He started shooting commercials to supplement his income and hasn't stopped since.<br><br>
+        
+    Pytka has directed one other feature film, "Let It Ride," which starred Richard Dreyfuss, and currently has other projects in development through his Venice, California-based production company, PYTKA.
     </p>
 </div>
+
+<!-- Read more/less -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/readmore.js"></script>
+    <script>
+        $('#info').readmore({
+          moreLink: '<a href="#">Usage, examples, and options</a>',
+          collapsedHeight: 384,
+          afterToggle: function(trigger, element, expanded) {
+            if(! expanded) { // The "Close" link was clicked
+              $('html, body').animate({scrollTop: element.offset().top}, {duration: 100});
+            }
+          }
+        });
+        $('#readmore').readmore({speed: 500});
+</script>

@@ -8,25 +8,42 @@
     <h1 class="span-all nba_stats">Ivan Reitman</h1>
 </div> 
 <div class="span-three nba_stats">
-    <p> 
-        IVAN REITMAN (producer), as a producer and director, has created many of American cinema's most successful and best-loved feature film comedies and has worked with Hollywood's acting elite.</p>
-
-        <p>Ivan Reitman on the setReitman currently heads Northern Lights Entertainment, a film and television production company. He is currently in production, as both producer and director, of the feature film "Fathers' Day," starring Robin Williams and Billy Crystal, for Warner Bros.</p>
-
-        <p>Reitman has produced such hits as the ground-breaking sensation "National Lampoon's Animal House," which introduced John Belushi to American filmgoers, and the family features "Beethoven" and Beethoven's 2nd." His directing credits include "Meatballs" and "Stripes," films which helped launch the career of Bill Murray; the two "Ghostbusters" films, starring Bill Murray, Dan Akyroyd and Harold Ramis; and "Dave," which starred Kevin Kline and Sigourney Weaver.</p>
-
-                <p>Ivan Reitman on the set With "Twins," Reitman created an entirely new comedic persona for action hero Arnold Schwarzenegger -- and forged a personal and professional relationship that continued with "Kindergarten Cop" and "Junior." Acclaimed dramatic actors such as Robert Redford, Debra Winger, Sigourney Weaver and Emma Thompson have also revealed untapped comic talents under Reitman's direction.</p>
-
-                        <p>In 1984, Reitman was honored as Director of the Year by the National Association of Theater Owners and the next year received a Special Achievement Award at the Canadian Genie awards. In 1979 and again in 1989 Reitman was honored with the People's Choice Award, for his films "Animal House" and "Twins." In November, 1994, Reitman became the third director honored by Variety magazine in a special Billion Dollar Director issue.</p>
-
-                                <p>Future motion-picture projects will find Reitman producing a remake of "The Creature From the Black Lagoon," as well as producing and directing "6 Days/7 Nights," starring Harrison Ford.</p>
-
-                                        <p>In addition to his achievements in film, Reitman has also forged a formidable career on television. He recently produced the HBO telefilm "The Late Shift," based on Bill Carter's non-fiction book about the late-night television wars; the production received seven Emmy nominations. Other recent producing endeavors include "Commandments," starring Aidan Quinn and Counrtney Cox; and "Private Parts," starring Howard Stern.</p>
-
-                                        <p>His television projects include the Emmy-nominated children's show "The Real Ghostbusters" and the Saturday morning animated series "Beethoven" for CBS. He is presently working on a new animated children's show, "Mummies."</p>
-
-                                        <p>Reitman was born in Czechoslovakia and fled with his family to Canada at the age of four. He attended Canada's McMaster University, where he produced and directed several television shorts. He followed with a live television show, "Greed," with Dan Akyroyd as its announcer.</p>
-
-                                        <p>"Spellbound," which Reitman produced for the live stage, evolved into the Broadway hit "The Magic Show," starring Doug Henning. He continued producing for the stage with the Off-Broadway hit "The National Lampoon Show," and returned to Broadway to produce and direct the musical "Merlin," earning a Tony nomination for directing.
+    <p id="readmore"> 
+        IVAN REITMAN (producer), as a producer and director, has created many of American cinema's most successful and best-loved feature film comedies and has worked with Hollywood's acting elite.<br><br>
+        
+        Ivan Reitman on the setReitman currently heads Northern Lights Entertainment, a film and television production company. He is currently in production, as both producer and director, of the feature film "Fathers' Day," starring Robin Williams and Billy Crystal, for Warner Bros.<br><br>
+        
+        Reitman has produced such hits as the ground-breaking sensation "National Lampoon's Animal House," which introduced John Belushi to American filmgoers, and the family features "Beethoven" and Beethoven's 2nd." His directing credits include "Meatballs" and "Stripes," films which helped launch the career of Bill Murray; the two "Ghostbusters" films, starring Bill Murray, Dan Akyroyd and Harold Ramis; and "Dave," which starred Kevin Kline and Sigourney Weaver.<br><br>
+        
+        Ivan Reitman on the set With "Twins," Reitman created an entirely new comedic persona for action hero Arnold Schwarzenegger -- and forged a personal and professional relationship that continued with "Kindergarten Cop" and "Junior." Acclaimed dramatic actors such as Robert Redford, Debra Winger, Sigourney Weaver and Emma Thompson have also revealed untapped comic talents under Reitman's direction.<br><br>
+        
+        In 1984, Reitman was honored as Director of the Year by the National Association of Theater Owners and the next year received a Special Achievement Award at the Canadian Genie awards. In 1979 and again in 1989 Reitman was honored with the People's Choice Award, for his films "Animal House" and "Twins." In November, 1994, Reitman became the third director honored by Variety magazine in a special Billion Dollar Director issue.<br><br>
+        
+        Future motion-picture projects will find Reitman producing a remake of "The Creature From the Black Lagoon," as well as producing and directing "6 Days/7 Nights," starring Harrison Ford.<br><br>
+        
+        In addition to his achievements in film, Reitman has also forged a formidable career on television. He recently produced the HBO telefilm "The Late Shift," based on Bill Carter's non-fiction book about the late-night television wars; the production received seven Emmy nominations. Other recent producing endeavors include "Commandments," starring Aidan Quinn and Counrtney Cox; and "Private Parts," starring Howard Stern.<br><br>
+        
+        His television projects include the Emmy-nominated children's show "The Real Ghostbusters" and the Saturday morning animated series "Beethoven" for CBS. He is presently working on a new animated children's show, "Mummies."<br><br>
+        
+        Reitman was born in Czechoslovakia and fled with his family to Canada at the age of four. He attended Canada's McMaster University, where he produced and directed several television shorts. He followed with a live television show, "Greed," with Dan Akyroyd as its announcer.<br><br>
+        
+        "Spellbound," which Reitman produced for the live stage, evolved into the Broadway hit "The Magic Show," starring Doug Henning. He continued producing for the stage with the Off-Broadway hit "The National Lampoon Show," and returned to Broadway to produce and direct the musical "Merlin," earning a Tony nomination for directing.
     </p>
 </div>
+
+<!-- Read more/less -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/readmore.js"></script>
+    <script>
+        $('#info').readmore({
+          moreLink: '<a href="#">Usage, examples, and options</a>',
+          collapsedHeight: 384,
+          afterToggle: function(trigger, element, expanded) {
+            if(! expanded) { // The "Close" link was clicked
+              $('html, body').animate({scrollTop: element.offset().top}, {duration: 100});
+            }
+          }
+        });
+        $('#readmore').readmore({speed: 500});
+</script>
