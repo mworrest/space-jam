@@ -468,16 +468,15 @@ btn {color: red;}
 
 .section-link img {width:100px;}
 */
-
-.block-area a {
-    padding-left: .5em;
-    padding-right: .5em;
-}
-
-.block-area a:first-of-type {padding-left: 0em;}
-.block-area a:last-of-type {padding-right: 0em;}
+.block-area a { padding-bottom: .5em;}
 
 @media screen and (min-width: 660px) {
+    .block-area a {
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    .block-area a:first-of-type {padding-left: 0em;}
+    .block-area a:last-of-type {padding-right: 0em;}
     .block-area:first-child {
         padding-right: 1em;
     }
