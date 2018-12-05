@@ -1243,6 +1243,13 @@ article br {line-height: 2.5em;}
     margin-bottom: 1em;
 }
 
+.quiz-question {
+    background-color: var(--lightgray);
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
 /* ---- Star page ---- */
 
 #quote {
