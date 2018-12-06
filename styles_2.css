@@ -16,7 +16,7 @@
     --orange: #E5AB59;
     --orange-dark: #CC8C3B;
     --lightgray: #f2f2f2;
-    --gray: #DEDEDE;
+    --gray: #d6d6d6;
     --darkgray: #bababa;
 }
 
@@ -501,54 +501,47 @@ p {font-weight: 100;}
 .block-title { 
     border-top-left-radius: .75em;
     border-top-right-radius: .75em;
-    padding-left: 1.25em; 
+    padding-left: 1.35em; 
     padding-top:.5em;
     color: white; 
     border-bottom: 3px solid;
 }
 
-.block-title {background-color:#efefef;}
-.block-title:hover {background-color: var(--orange);
-        font-weight:bold;
-            color:#fff;
+.block-title {
+    background-color:#efefef; 
+    padding-top: 20px; 
+    padding-bottom: 18px;
+    padding-left:20px;
 }
 
 .block-icon {background-color: var(--bluegray-fade);}
 
-.block-icon about {background-color: var(--orange);}
-
-.about div { 
+.feature-block div { 
     border-color: var(--orange);
 
 } 
-.about div:hover { 
- 
-    p{
-          color: #fff;
-    font-weight:bold;
-    }
-} 
-.about div h2 { 
+
+.feature-block div h2 { 
     color: var(--bluegray);
-text-align: left;
+    font-size: 1.3em;
+    text-align: left;
 } 
-.about div p { 
+.feature-block div p { 
     color: var(--bluegray);
     text-align: left;
-    margin-top:0em;
-    margin-bottom:.5em;
+    margin-top:.075em;
+    margin-bottom:0;
+} 
 
-} 
-.about div p:hover { 
- 
+.orange div { border-color: var(--orange);} 
+.orange .feature-block:hover .block-title {background-color: var(--orange); }
+.green div { border-color: var(--green);} 
+.green .feature-block:hover .block-title {background-color: var(--green); }
+.blue div { border-color: var(--blue);} 
+.blue .feature-block:hover .block-title {background-color: var(--blue); }
+.pink div { border-color: var(--pink);} 
+.pink .feature-block:hover .block-title {background-color: var(--pink); }
 
-} 
-.about div h2:hover{ 
-   /* color: #fff;
-    font-weight:bold;*/
-} 
-.games div { border-color: var(--green);} 
-.store div { border-color: var(--blue);} 
 
 
 .block-icon { 
@@ -566,9 +559,17 @@ text-align: left;
 
 .feature-block:hover .block-icon {
     background-blend-mode: normal;
- 
-/*    background-size: 110%;*/
+ }
+.feature-block:hover .block-title {
+    background-color: var(--orange);
+    font-weight:bold;
+    color:#fff;
 }
+.feature-block:hover .block-title  h2, .feature-block:hover .block-title  p {
+/*    font-weight:bold;*/
+    color:#fff;
+}
+
 
 .block-icon.making { background-image: url(assets/feature-blocks/making.jpg);}
 .block-icon.lineup { background-image: url(assets/feature-blocks/nba.png);}
