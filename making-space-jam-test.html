@@ -1425,7 +1425,28 @@
 
 
 
+   
+    <a href="#openModal2">Box 2</a>
 
+    <!--BEGIN MODAL WINDOWS-->
+    <div id="openModal1" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="assets/photos-from-film/photos-from-film-1.jpg">
+    </div>
+    </div>
+    
+    
+      <div id="openModal2" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Modal Box 2</h2>
+        <p><strong>Box 2</strong></p>
+        <p>yadda yadda</p>
+    </div>
+</div>
+
+<!--END MODAL WINDOWS-->
 
 
 
@@ -1444,7 +1465,7 @@
                         <h3>Photos from the Film</h3>
                         <div class="media-gallery content">
                             <div id="" class="carousel-item">
-                                <img class="frame" src="assets/photos-from-film/photos-from-film-1.jpg">
+                                    <a href="#openModal1"><img class="frame" src="assets/photos-from-film/photos-from-film-1.jpg"></a>
                             </div>
                             <div id="" class="carousel-item">
                                 <img class="frame" src="assets/photos-from-film/photos-from-film-2.jpg">
@@ -1595,6 +1616,9 @@
         </div>
     </div>
 
+
+
+    
     <!--FOOTER-->
     <div class="container footer">
         <div id="footer" class="content flex"></div>
@@ -1626,12 +1650,46 @@
         $('.multiple-items').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+    
+    {
+      breakpoint: 660,
+      settings: {
+  
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+  
+        slidesToShow: 1
+      }
+    }
+  ]
         })
         $('.media-gallery').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+    
+    {
+      breakpoint: 660,
+      settings: {
+  
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+  
+        slidesToShow: 1
+      }
+    }
+  ]
         });
 
     </script>
