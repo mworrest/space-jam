@@ -40,7 +40,12 @@
 
     <div class="container article-blocks">
         <div class="content">
-            <h2>Production Notes</h2>
+              <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'd')" id="defaultOpen">Production Notes</button>
+                    <button class="tablinks" onclick="openCity(event, 'e')" id="defaultOpen">Technical Notes</button>
+                </div>
+    <div id="d" class="tabcontent">
+        <h2> Production Notes</h2>
             <h3>Ehhh, what's up, Doc?</h3>
             <article>
                 <p>Production Photo Warner Bros.' Looney Tunes, led by the creative impetus of filmmaker IVAN REITMAN, blast
@@ -300,8 +305,9 @@
                     Bros. Family Entertainment, a division of Warner Bros., A Time Warner Entertainment Company.</p>
             </article>
         </div>
-        <div class="content">
-            <h2>Technical Notes</h2>
+                                
+            <div id="e" class="tabcontent">
+                    <h2>Technical Notes</h2>
             <p>By Bill Warren</p>
 
             <h3>The Technical Background to Space Jam</h3>
@@ -678,15 +684,12 @@
                     <br> "Despite all the technological advances in animation, the quality of the production is still totally
                     dependent on the skills of the artists. Computers are simply the latest tools available to help them
                     bring their vision to reality. No hardware or software will ever replace human creativity."</p>
-            </article>
-        </div>
+            </article>      
+        </div>                          
     </div>
 
     <div class="container trailer">
         <div class="content">
-
-
-
 
         </div>
     </div>
@@ -978,7 +981,7 @@
     <!--SCRIPTS-->
     <script src="/js/jquery.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+    <script src="/js/includes.js"></script>
 
     <script src="/js/slick.min.js"></script>
     <script src="/js/carousel.js"></script>
