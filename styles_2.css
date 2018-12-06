@@ -63,7 +63,9 @@ img {
 
 /* -------------- Basic grid specs -------------- */
 
-.container {grid-column: 1/4;}
+.container {
+    grid-column: 1/4;
+}
 
 @media screen and (min-width: 1200px) { 
     body {grid-template-columns: 1fr minmax(1200px, 1fr) 1fr;}
@@ -92,6 +94,16 @@ div.content.flex {
     div.content.flex {
         padding-left: 15px;
     }
+}
+
+/* -------------- Section Padding -------------- */
+
+.pb {padding-bottom: 1.5rem !important;}
+.pt {padding-top: 1.5rem !important;}
+
+@media screen and (min-width: 660px) { 
+    .pb {padding-bottom: 2.5rem !important;}
+    .pt {padding-top: 2rem !important;}
 }
 /* -------------- Text Styles -------------- */
 
@@ -167,7 +179,7 @@ p {font-weight: 100;}
 
 @media screen and (max-width: 660px) { 
     .container.header {
-        position: sticky; top: 0; z-index: 2;
+        position: sticky; top: 0; z-index: 3;
     }
 }
 
@@ -625,13 +637,13 @@ p {font-weight: 100;}
 }
 
 .feature-block.social {
-    background-color: white;
+    background-color: var(--lightgray);
     color: black;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.feature-block.social h2 {flex: 1 100%;}
+.feature-block.social h2 {flex: 1 100%; align-self: center;}
 .feature-block.social div {}
 
 @media screen and (min-width: 660px) {
