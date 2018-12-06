@@ -643,7 +643,7 @@ p {font-weight: 100;}
     justify-content: space-around;
 }
 
-.feature-block.social h2 {flex: 1 100%; align-self: center;}
+.feature-block.social h2 {flex: 1 100%;}
 .feature-block.social div {}
 
 @media screen and (min-width: 660px) {
