@@ -67,6 +67,10 @@ img {
     grid-column: 1/4;
 }
 
+.container>h2 {
+text-align: center;
+}
+
 @media screen and (min-width: 1200px) { 
     body {grid-template-columns: 1fr minmax(1200px, 1fr) 1fr;}
 }
