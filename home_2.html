@@ -195,14 +195,33 @@
             });
           });
           </script>
+<script>
+$('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
 
-          <script>
-          $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 5,
-                slidesToScroll: 1
-              });
+        {
+            breakpoint: 800,
+            settings: {
+
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+
+                slidesToShow: 1
+            }
+        }
+    ]
+});
     </script>
+
+
+        
 
 
 
