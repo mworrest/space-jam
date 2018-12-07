@@ -67,6 +67,10 @@ img {
     grid-column: 1/4;
 }
 
+.container>h2 {
+text-align: center;
+}
+
 @media screen and (min-width: 1200px) { 
     body {grid-template-columns: 1fr minmax(1200px, 1fr) 1fr;}
 }
@@ -605,7 +609,7 @@ p {font-weight: 100;}
     /* font-family: 'Teko', sans-serif;
     text-transform: uppercase;
     letter-spacing: .065em; */
-    padding: .5em 0;
+    padding: .5em;
     background-color: var(--bluegray);
 }
 .small .block-icon {
@@ -961,7 +965,7 @@ p {font-weight: 100;}
     color: #fff;
 }
 
-}
+
 .footer li{
     flex: 1 1 1 0;
 }

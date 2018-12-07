@@ -1,0 +1,86 @@
+
+
+
+.ravens{
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 350px;
+    margin: 0; padding: 0;
+}
+
+
+
+
+.ravens .orioles{
+    float: left;
+    display: block;
+    margin: 0; padding: 0;
+}
+
+.ravens .orioles>input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.ravens .orioles>label {
+    display: block;
+    padding: 6px 21px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    color: var(--bluegray);
+    background: white;
+}
+
+
+
+.ravens .terrapins {
+    z-index: 0;/* or display: none; */
+    overflow: hidden;
+    padding: 25px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    background: white;
+    color: var(--bluegray);
+    
+    opacity:0;
+    transition: opacity 400ms ease-out;
+}
+
+.ravens>.orioles>[id^="orioles"]:checked + label {
+    background: var(--green-dark);
+    color: #F5F5F5;
+}
+
+.ravens>.orioles>[id^="orioles"]:checked ~ [id^="orioles-terrapins"] {
+    z-index: 1;/* or display: block; */
+   
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+}
+
+
+@media screen and (max-width: 660px){
+    .ravens .orioles>label {
+        font-size: 10px;
+        padding: 7px 15px;
+        
+    }
+
+}
+
+@media screen and (max-width: 470px){
+    .ravens{
+        min-width: 320px;
+
+    }
+    .ravens .orioles>label {
+            display: block;
+            padding: 8px 6px;
+            font-size: 8px;
+        }
+
+}
